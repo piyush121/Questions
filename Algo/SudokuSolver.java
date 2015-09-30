@@ -6,11 +6,42 @@ class SudokuSolver
 	private char[][] sudoku;
 	public SudokuSolver()
 	{
+		sudoku = new char[N][N];
 		//empty cells are indicated by '.'
 		for(int r=0;r<N;r++)
 			for(int c=0;c<N;c++)
 				sudoku[r][c] = '.';
 		
+		sudoku[0][0] = '5';
+		sudoku[0][1] = '3';
+		sudoku[0][4] = '7';
+		sudoku[1][0] = '6';
+		sudoku[1][3] = '1';
+		sudoku[1][4] = '9';
+		sudoku[1][5] = '5';
+		sudoku[2][1] = '9';
+		sudoku[2][2] = '8';
+		sudoku[2][7] = '6';
+		sudoku[3][0] = '8';
+		sudoku[3][4] = '6';
+		sudoku[3][8] = '3';
+		sudoku[4][0] = '4';
+		sudoku[4][3] = '8';
+		sudoku[4][5] = '3';
+		sudoku[4][8] = '1';
+		sudoku[5][0] = '7';
+		sudoku[5][4] = '2';
+		sudoku[5][8] = '6';
+		sudoku[6][1] = '6';
+		sudoku[6][6] = '2';
+		sudoku[6][7] = '8';
+		sudoku[7][3] = '4';
+		sudoku[7][4] = '1';
+		sudoku[7][5] = '9';
+		sudoku[7][8] = '5';
+		sudoku[8][4] = '8';
+		sudoku[8][7] = '7';
+		sudoku[8][8] = '9';
 		//sudoku = ;//initialize sudoku
 	}
 
@@ -96,10 +127,22 @@ class SudokuSolver
 		return false;
 	}
 
+	private void printSudoku()
+	{
+		for(int i=0;i<N;i++)
+		{
+			for(int j=0;j<N;j++)
+				System.out.print(sudoku[i][j]+" ");
+			System.out.println();
+		}
+		
+	}
+
 	public static void main(String args[])
 	{	
 		SudokuSolver ss = new SudokuSolver();
-
+		ss.solve();
+		ss.printSudoku();
 	}
 
 }
