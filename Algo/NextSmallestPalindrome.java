@@ -1,0 +1,1 @@
+/* http://www.geeksforgeeks.org/given-a-number-find-next-smallest-palindrome-larger-than-this-number/ */
