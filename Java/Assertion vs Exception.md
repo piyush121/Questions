@@ -1,5 +1,5 @@
 ### Assertion vs Exception
-Assertion vs Exception
+
 - Assertions should be used to check something that should never happen, while an exception should be used to check something that might happen. 
 - For example, a function might divide by 0, so an exception should be used, but an assertion could be used to check that the harddrive suddenly disapears. An assertion would stop the program from running, but an exception would let the program continue running.
 
