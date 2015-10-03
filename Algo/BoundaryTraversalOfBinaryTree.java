@@ -57,7 +57,7 @@ public class BoundaryTraversalOfBinaryTree
 		TreeNode root = new TreeNode(20);
 		root.left = new TreeNode(8);
 		root.right = new TreeNode(22);
-		
+
 		root.left.left = new TreeNode(4);
 		root.left.right = new TreeNode(12);
 		root.left.right.left = new TreeNode(10);
@@ -74,5 +74,3 @@ public class BoundaryTraversalOfBinaryTree
 		System.out.println();
 	}
 }
-
-
