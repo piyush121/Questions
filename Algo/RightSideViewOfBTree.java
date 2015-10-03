@@ -1,4 +1,5 @@
 /* http://www.geeksforgeeks.org/print-right-view-binary-tree-2/ */
+/* https://leetcode.com/problems/binary-tree-right-side-view/ */
 
 import java.util.List;
 import java.util.ArrayList;
@@ -11,23 +12,24 @@ class RightSideViewOfBTree
 	{
 		TreeNode root = new TreeNode(1);
 		root.left = new TreeNode(2);
-		root.right = new TreeNode(3);
+		//root.right = new TreeNode(3);
 
-		root.left.left = new TreeNode(4);
-		root.left.right = new TreeNode(5);
-		root.right.left = new TreeNode(6);
-		root.right.right = new TreeNode(7);
+		//root.left.left = new TreeNode(4);
+		//root.left.right = new TreeNode(5);
+		//root.right.left = new TreeNode(6);
+		//root.right.right = new TreeNode(7);
 
-		root.left.left.left = new TreeNode(8);
-		root.right.right.right = new TreeNode(9);
+		//root.left.left.left = new TreeNode(8);
+		//root.right.right.right = new TreeNode(9);
 
-		root.left.left.left.left = new TreeNode(10);
+		//root.left.left.left.left = new TreeNode(10);
 
 		RightSideViewOfBTree r = new RightSideViewOfBTree();
 		r.usingLevelOrderTraversal(root);
 		System.out.println();
-		r.simpleRecursion(root, 1);
-		System.out.println();
+		List<Integer> list = new ArrayList<>();
+		r.simpleRecursion(root, 1, list);
+		System.out.println(list);
 	}
 
 	public void usingLevelOrderTraversal(TreeNode node)
@@ -60,7 +62,7 @@ class RightSideViewOfBTree
 		}
 	}
 
-	public void simpleRecursion(TreeNode node, int level)
+	public void simpleRecursion(TreeNode node, int level, List<Integer> list)
 	{
 		if(node==null)
 		{
@@ -69,11 +71,11 @@ class RightSideViewOfBTree
 		if(max < level)
 		{
 			System.out.print(node.value+" ");
+			list.add(node.value);
 			max = level;
 		}
 
-		simpleRecursion(node.right, level+1);
-		simpleRecursion(node.left, level+1);
-		
+		simpleRecursion(node.right, level+1, list);
+		simpleRecursion(node.left, level+1, list);
 	}
 }
