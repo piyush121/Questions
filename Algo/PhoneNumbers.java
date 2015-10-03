@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.List;
 class PhoneNumbers
 {
 	HashMap<String, String[]> map = null;
@@ -18,12 +19,12 @@ class PhoneNumbers
 		map.put("9", new String[]{"W", "X", "Y", "Z"});
 		map.put("0", new String[]{" "});
 	}
-	
+
 	public List<String> letterCombinations(String phoneNumber)
 	{
 		return helper(phoneNumber, "", 0, 0);
 	}
-	
+
 	public List<String> helper(String phoneNumber, String temp, int count, int num)
 	{
 		if(count==phoneNumber.length())
@@ -40,11 +41,10 @@ class PhoneNumbers
 		}
 		return a;
 	}
-	
+
 	public static void main(String args[])
 	{
 		PhoneNumbers ph = new PhoneNumbers();
-		System.out.println(ph.generate("72926"));
+		System.out.println(ph.letterCombinations("72926"));
 	}
 }
-
