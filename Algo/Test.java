@@ -26,5 +26,10 @@ class Test
 			if('9'==i)
 				System.out.println(true);
 		}
+
+		String s = "Payam      Rastogi";
+		String[] arr = s.split("\\s+");
+		for(String p: arr)
+			System.out.println("#" +p);
 	}
 }
