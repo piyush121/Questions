@@ -13,4 +13,9 @@
 	- Left Join and Inner Join
 	- Binary Search Tree and Hash Table
 	- (1,100) number find fixed duplicate
+
+	- BinarySearchTree iterator
+	- Balance Parenthesis in O(n) time and O(1) spaceDS_Store
+
+
 	
