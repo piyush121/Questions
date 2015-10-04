@@ -7,9 +7,9 @@ class NumberOfDigitOne
 		System.out.println(solution.countDigitOne(12));
 	}
 
-	public int countDigitOne(int n) 
+	public int countDigitOne(int n)
 	{
-  		//base case 
+  		//base case
   		if(n<1)
   			return 0;
   		//Find the number of digits minus 1 in n
@@ -57,7 +57,7 @@ class NumberOfDigitOne
    		// numbers is sum of following.
    		// 1) Count of numbers from 0 to 28 a
    		// 2) recur for 8
-   		//return (msd) * count[d] 
+   		//return (msd) * count[d]
 
 	}
 }

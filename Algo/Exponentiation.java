@@ -16,7 +16,7 @@ class Exponentiation
 			return m*power(m*m, (n-1)/2);
 		return -1;
 	}
-	
+
 	public static void main(String args[])
 	{
 		System.out.println(power(2.01,3));

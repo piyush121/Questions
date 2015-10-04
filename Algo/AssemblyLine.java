@@ -1,7 +1,7 @@
 class AssemblyLine
 {
 	private int[] f1;
-	private int[] f2;	
+	private int[] f2;
 	private int[][] l;
 	private int f;
 	private static 	int last;
@@ -12,7 +12,7 @@ class AssemblyLine
 		l = new int[a.length][2];
 		l[0][0] = -1;
 		l[0][1] = -1;
-		
+
 		f1[0] = a[0][0] + e[0];
 		f2[0] = a[0][1] + e[1];
 		System.out.print(f1[0]+"\t"+f2[0]+"\n");
@@ -21,7 +21,7 @@ class AssemblyLine
 			if(f1[i-1]+a[i][0] <= f2[i-1] +t[i-1][1] + a[i][0])
 			{
 				f1[i] = f1[i-1] + a[i][0];
-				l[i][0] = 1; 
+				l[i][0] = 1;
 				//System.out.print("if"+f1[i-1]+" "+a[i][0]+" "+f1[i]+"\t");
 			}
 			else
@@ -72,18 +72,18 @@ class AssemblyLine
 			// System.out.println(l[i][0]+"\t"+l[i][1]);
 		// }
 	}
-	
+
 	public void printStations()
 	{
 		int x = last;
 		System.out.println("line " + x + " station "  + l.length);
 		for(int j = l.length-1; j>=1;j--)
-		{ 
+		{
 			x = l[j][x-1];
 			System.out.println("line "+ x + " station " + j);
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		int[][] a = {{7,8},{9,5},{3,6},{4,4},{8,5},{4,7}};
@@ -97,7 +97,7 @@ class AssemblyLine
 		//asm.printStations();
 		asm.printStationsInorder(last,6);
 	}
-	
+
 	public void printStationsInorder(int x, int n)
 	{
 		if(x==-1)

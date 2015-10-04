@@ -14,7 +14,7 @@ class MergeSortedArray
 		int n = 5;
 		mga.merger(a,m,b,n);
 	}
-	
+
 	public void merger(int[] a,int m, int[] b, int n)
 	{
 		while(m>0 && n>0)

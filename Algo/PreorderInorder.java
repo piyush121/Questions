@@ -14,7 +14,7 @@ public class PreorderInorder
 		System.out.println(list);
 	}
 
-	public TreeNode buildTree(int[] preorder, int[] inorder) 
+	public TreeNode buildTree(int[] preorder, int[] inorder)
 	{
 		if(preorder==null || preorder.length==0)
 			return null;
@@ -37,13 +37,13 @@ public class PreorderInorder
     	if(root!=null)
     	{
     		root.left = construct(start, map.get(root.val)-1, preorder, map);
-    		root.right = construct(map.get(root.val)+1, end, preorder, map); 
+    		root.right = construct(map.get(root.val)+1, end, preorder, map);
     	}
     	return root;
     }
 
     public TreeNode determineRoot(int[] preorder)
-    {	
+    {
     	TreeNode root = null;
     	if(p<preorder.length)
     	{

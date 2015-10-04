@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 class PreorderTraversalStack
 {
-	public List<Integer> preorderTraversal(TreeNode root) 
+	public List<Integer> preorderTraversal(TreeNode root)
     {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		if(root == null)
@@ -41,14 +41,14 @@ class PreorderTraversalStack
 	}
 }
 
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

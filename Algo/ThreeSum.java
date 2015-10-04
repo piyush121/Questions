@@ -14,7 +14,7 @@ class ThreeSum
 				map.put((0-a[i]-a[j]), s);
 			}
 		}
-		
+
 		for(int i=0;i<a.length;i++)
 		{
 			if(map.containsKey(a[i]))
@@ -25,7 +25,7 @@ class ThreeSum
 			}
 		}
 	}
-	
+
 	public static void main(String[] args)
 	{
 		ThreeSum ts = new ThreeSum();

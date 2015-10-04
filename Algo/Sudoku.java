@@ -1,7 +1,7 @@
 import java.util.HashSet;
 class Sudoku
 {
-	public boolean isValidSudoku(char[][] board) 
+	public boolean isValidSudoku(char[][] board)
 	{
 		//check board length
 		if(board.length != 9 || board[0].length!=9) return false;
@@ -30,7 +30,7 @@ class Sudoku
 				}
 			}
 		}
-		
+
 		for(int i=0;i<3;i++)
 		{
 			for(int j=0;j<3;j++)
@@ -51,7 +51,7 @@ class Sudoku
 		}
 		return true;
     }
-	
+
 	public static void main(String args[])
 	{
 		Sudoku s = new Sudoku();

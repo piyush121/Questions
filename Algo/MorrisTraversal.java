@@ -31,9 +31,9 @@ public class MorrisTraversal
 					current = current.right;
 				}
 			}
-		}	
+		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		TreeNode root = new TreeNode(40);
@@ -43,7 +43,7 @@ public class MorrisTraversal
 		root.right = new TreeNode(60);
 		root.right.left = new TreeNode(50);
 		root.right.right = new TreeNode(70);
-		
+
 		MorrisTraversal m = new MorrisTraversal();
 		m.morrisTraversal(root);
 	}

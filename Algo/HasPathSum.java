@@ -1,10 +1,10 @@
 public class HasPathSum
 {
-	public boolean hasPathSum(TreeNode root, int sum) 
+	public boolean hasPathSum(TreeNode root, int sum)
 	{
         return helper(root, sum, 0);
     }
-	
+
 	public boolean helper(TreeNode root, int target, int sum)
 	{
 		if(root==null)
@@ -28,7 +28,7 @@ public class HasPathSum
 			return false;
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		HasPathSum hps = new HasPathSum();
@@ -38,14 +38,14 @@ public class HasPathSum
 	}
 }
 
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

@@ -6,7 +6,7 @@ class HeightBalancedBTree
 		helper(root);
 		return result;
     }
-	
+
 	public int helper(TreeNode root)
 	{
 		TreeNode node = root;

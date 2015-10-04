@@ -4,7 +4,7 @@ public class PrintPaths
 	{
 		helper(root, "");
 	}
-	
+
 	public void helper(TreeNode root, String path)
 	{
 		if(root==null)
@@ -14,13 +14,13 @@ public class PrintPaths
 		{
 			System.out.println(path);
 		}
-		else	
-		{	
+		else
+		{
 			helper(root.left, path);
 			helper(root.right, path);
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		PrintPaths p = new PrintPaths();

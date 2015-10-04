@@ -29,6 +29,4 @@ class Sqrt
 
 		return (int)lo;
 	}
-}	
-
-
+}

@@ -10,8 +10,8 @@ class RandomDice
 		}
 		System.out.println(sum/10000);
 	}
-	
-	public static int randomInteger(int min, int max) 
+
+	public static int randomInteger(int min, int max)
 	{
 
 		Random rand = new Random();

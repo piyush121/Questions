@@ -4,7 +4,7 @@ class Node
 	public Node next;
 	public Node prev;
 	public String value;
-	
+
 	Node(String value)
 	{
 		this.value = value;
@@ -16,7 +16,7 @@ public class CheckFirstNonRepeated
 {
 	static HashMap<String, Node> map = new HashMap<String, Node>();
 	static String s = "the angry dog was red and the cat was also angry";
-	
+
 	public static void main(String args[])
 	{
 		String[] temp = s.split(" ");
@@ -52,7 +52,7 @@ public class CheckFirstNonRepeated
 		}
 		System.out.println(head.next.value);
 	}
-	
+
 	public static void printLinkedList(Node head)
 	{
 		Node temp = head;
@@ -63,5 +63,5 @@ public class CheckFirstNonRepeated
 		}
 		System.out.println();
 	}
-	
+
 }

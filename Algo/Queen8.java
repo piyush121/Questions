@@ -1,7 +1,7 @@
 class Queen8
-{	
+{
 	static int[] columnsForRows = new int[8];
-	public static boolean check(int row)	
+	public static boolean check(int row)
 	{
 		for(int i=0;i<row;i++)
 		{
@@ -11,7 +11,7 @@ class Queen8
 		}
 		return true;
 	}
-	
+
 	public static void placeQueen(int row)
 	{
 		if(row==8)
@@ -27,7 +27,7 @@ class Queen8
 				placeQueen(row+1);
 		}
 	}
-	
+
 	public static void printBoard()
 	{
 		for(int i=0;i<8;i++)
@@ -43,11 +43,9 @@ class Queen8
 			System.out.println();
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		placeQueen(0);
 	}
 }
-
-

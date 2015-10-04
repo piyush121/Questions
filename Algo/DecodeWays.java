@@ -2,7 +2,7 @@ class DecodeWays
 {
 	int count = 0;
 	String map = " ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	public int numDecodings(String s) 
+	public int numDecodings(String s)
 	{
 		if(s==null||s=="")
 			return 0;
@@ -22,12 +22,12 @@ class DecodeWays
 			helper(s+map.charAt(Integer.parseInt(r.substring(0,2))), r.substring(2));
 		return count;
 	}
-	
+
 	public static void main(String args[])
 	{
 		DecodeWays dc = new DecodeWays();
 		System.out.println(dc.numDecodings("4757562545844617494555774581341211511296816786586787755257741178599337186486723247528324612117156948"));
 	}
-	
-		
+
+
 }

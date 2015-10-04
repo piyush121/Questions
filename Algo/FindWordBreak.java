@@ -15,7 +15,7 @@ class FindWordBreak
 			temp = temp + p.charAt(i);
 			//System.out.println("i: "+i+" temp: "+temp);
 			if(dict.contains(temp))
-			{	
+			{
 				//System.out.println("if: "+temp);
 				dict.remove(temp);
 				matched.add(temp);
@@ -39,7 +39,7 @@ class FindWordBreak
 		else
 			return false;
 	}
-	
+
 	public static void main(String args[])
 	{
 		HashSet<String> dict = new HashSet<String>();

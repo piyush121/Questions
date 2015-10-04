@@ -12,7 +12,7 @@ class Anagram
 		{
 			occurrenceMap.put(c, 0);
 		}
-		
+
 		for(int i=0;i<left.length();i++)
 		{
 			int ol = occurrenceMap.get(left.charAt(i));
@@ -20,7 +20,7 @@ class Anagram
 			int or = occurrenceMap.get(right.charAt(i));
 			occurrenceMap.put(right.charAt(i),or--);
 		}
-		
+
 		for(Integer value : occurrenceMap.values())
 		{
 			if(value!=0)
@@ -28,12 +28,12 @@ class Anagram
 		}
 		return true;
 	}
-	
+
 	public static void main(String args[])
 	{
 		Anagram a = new Anagram();
 		System.out.println(a.isAnagram("cat", "act"));
 		System.out.println("cat".hashCode());
-		System.out.println("act".hashCode());	
+		System.out.println("act".hashCode());
 	}
 }

@@ -1,7 +1,7 @@
 class Maximum
 {
 	static int[] a = {1,3,6,2,9,8,5,7,4};
-	
+
 	public static void main(String args[])
 	{
 		for(int i=0;i<a.length;i++)

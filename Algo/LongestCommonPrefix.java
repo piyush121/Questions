@@ -1,12 +1,12 @@
 class LongestCommonPrefix
 {
-	public String longestCommonPrefix(String[] strs) 
+	public String longestCommonPrefix(String[] strs)
 	{
 		if(strs.length==0)
 			return "";
 		return helper(strs, "",0);
     }
-	
+
 	public String helper(String[] strs, String prefix,int length)
 	{
 		String temp = "";
@@ -35,7 +35,7 @@ class LongestCommonPrefix
 		}
 		return prefix;
 	}
-	
+
 	public String efficient(String[] strs)
 	{
 		for(int i=0;i<=strs[0].length();i++)
@@ -46,7 +46,7 @@ class LongestCommonPrefix
 		}
 		return "";
 	}
-	
+
 	public static void main(String[] args)
 	{
 		LongestCommonPrefix lcp = new LongestCommonPrefix();

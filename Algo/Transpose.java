@@ -14,7 +14,7 @@ class Transpose //Square Matrix
 		}
 		return a;
 	}
-	
+
 	public static void main(String args[])
 	{
 		Transpose t = new Transpose();

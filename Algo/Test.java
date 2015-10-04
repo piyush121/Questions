@@ -9,7 +9,7 @@ class Test
 
 		System.out.println("=====================");
 		int nine = 9;
-		System.out.println(Integer.bitCount(nine));	
+		System.out.println(Integer.bitCount(nine));
 		System.out.println(Integer.toBinaryString(nine));
 		int nine_1 = 9-1;
 		System.out.println(Integer.toBinaryString(nine & nine_1));

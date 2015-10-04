@@ -20,7 +20,7 @@ class EvaluateReversePolish
 		}
 		return Integer.parseInt(stack.pop());
 	}
-	
+
 	public String evaluate(String op, String a, String b)
 	{
 		switch(op)
@@ -32,7 +32,7 @@ class EvaluateReversePolish
 		}
 		return null;
 	}
-	
+
 	public static void main(String[] args)
 	{
 		EvaluateReversePolish erp = new EvaluateReversePolish();

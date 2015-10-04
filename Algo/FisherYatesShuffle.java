@@ -13,14 +13,14 @@ class FisherYatesShuffle
 		}
 		return a;
 	}
-	
+
 	public void printArray(int[] a)
 	{
 		for(int x: a)
 			System.out.print(x+" ");
 		System.out.println();
 	}
-	
+
 	public static void main(String args[])
 	{
 		int[] a = {1,2, 3, 4, 5, 6,7, 8, 9, 10};

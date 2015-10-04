@@ -1,11 +1,11 @@
 public class MaxDepth
 {
-	public int maxDepth(TreeNode root) 
+	public int maxDepth(TreeNode root)
 	{
 		TreeNode node = root;
         return  helper(node, 0,0,0)-1;
     }
-	
+
 	public int helper(TreeNode node ,int leftDepth, int rightDepth ,int depth)
 	{
 		if(node == null)
@@ -17,7 +17,7 @@ public class MaxDepth
 		System.out.println("left: "+leftDepth+" right: "+rightDepth+" depth: "+depth+" node: "+ node.val);
 		return Math.max(leftDepth, rightDepth)+1;
 	}
-	
+
 	public static void main(String args[])
 	{
 		MaxDepth md = new MaxDepth();
@@ -40,14 +40,14 @@ public class MaxDepth
 		System.out.println(md.maxDepth(root));
 	}
 }
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

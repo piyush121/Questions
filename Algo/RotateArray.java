@@ -12,7 +12,7 @@ class RotateArray
 		{
 			if(nums.length-k+i<nums.length)
 			{
-				n[i] = nums[nums.length-k+i]; 
+				n[i] = nums[nums.length-k+i];
 			}
 			else
 			{
@@ -25,7 +25,7 @@ class RotateArray
 		}
 		printArray(n);
 	}
-	
+
 	public void efficientRotate(int[] nums, int k) {
     k = k % nums.length;
     int[] head = Arrays.copyOfRange(nums, 0, nums.length - k);
@@ -33,18 +33,18 @@ class RotateArray
     System.arraycopy(tail, 0, nums, 0, tail.length);
     System.arraycopy(head, 0, nums, k, head.length);
 }
-	
+
 	public void printArray(int[] n)
 	{
 		for(int num : n)
 			System.out.print(num+"\t");
 	}
-	
+
 	public static void main(String args[])
 	{
 		RotateArray rt = new RotateArray();
 		int[] nums = {1,2};
 		rt.rotate(nums, 3);
-		
+
 	}
 }

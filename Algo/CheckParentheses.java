@@ -12,7 +12,7 @@ class CheckParentheses
 		map.put('[',']');
 		stack = new Stack<Character>();
 	}
-	
+
 	public boolean isValid(String s)
 	{
 		if(s==null || s.equals(""))
@@ -34,7 +34,7 @@ class CheckParentheses
 		}
 		return stack.isEmpty();
 	}
-	
+
 	public static void main(String args[])
 	{
 		CheckParentheses cp = new CheckParentheses();

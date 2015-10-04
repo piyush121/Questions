@@ -20,7 +20,7 @@ class Parentheses
 			}
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		generate(0,0,"",3);

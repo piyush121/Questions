@@ -12,7 +12,7 @@ public class ConnectNext
 		LinkedList<TreeLinkNode> next = new LinkedList<TreeLinkNode>();
 		TreeLinkNode node = root;
 		next.add(node);
-		
+
 		while(!next.isEmpty())
 		{
 			curr = next;
@@ -38,8 +38,8 @@ class TreeLinkNode
 {
     int val;
     TreeLinkNode left, right, next;
-    TreeLinkNode(int x) 
-	{ 
+    TreeLinkNode(int x)
+	{
 		this.val = x;
 		this.left = null;
 		this.right = null;

@@ -18,7 +18,7 @@ public static void main(String args[])
 				minWt = weights[j];
 			}
 		}
-   
+
 		//swap weights
 		int tempWt = weights[minIdx];
 		weights[minIdx] = weights[i];
@@ -41,25 +41,25 @@ public static void dpKnapsack(int items, int capacity, int[] values,int[] weight
   int value = 0;
 
   int[][] dpTable = new int[capacity + 1][items + 1];
-  for (int i = 0; i <= items; i++) 
+  for (int i = 0; i <= items; i++)
   {
-	for (int c = 0; c <= capacity; c++) 
+	for (int c = 0; c <= capacity; c++)
 	{
-		if (i == 0 || c == 0) 
+		if (i == 0 || c == 0)
 		{
 			dpTable[c][i] = 0;
-		} 
-		else 
+		}
+		else
 		{
-			if (c - weights[i - 1] < 0) 
+			if (c - weights[i - 1] < 0)
 			{
 				dpTable[c][i] = dpTable[c][i - 1];
-			} 
-			else 
+			}
+			else
 			{
 				int isNotTaken = dpTable[c][i - 1];
 				int isTaken = 0;
-				if (c - weights[i - 1] >= 0) 
+				if (c - weights[i - 1] >= 0)
 				{
 					isTaken = values[i - 1]+ dpTable[c - weights[i - 1]][i - 1];
 				}
@@ -72,13 +72,13 @@ public static void dpKnapsack(int items, int capacity, int[] values,int[] weight
 
 	// backtrack
 	int c = capacity;
-	for (int i = items; i >= 1; i--) 
+	for (int i = items; i >= 1; i--)
 	{
-		if (dpTable[c][i] == dpTable[c][i - 1]) 
+		if (dpTable[c][i] == dpTable[c][i - 1])
 		{
 			taken[i - 1] = 0;
-		} 
-		else 
+		}
+		else
 		{
 			taken[i - 1] = 1;
 			c = c - weights[i - 1];
@@ -87,7 +87,7 @@ public static void dpKnapsack(int items, int capacity, int[] values,int[] weight
 
 	// prepare the solution in the specified output format
 	System.out.println(value + " 0");
-	for (int i = 0; i < items; i++) 
+	for (int i = 0; i < items; i++)
 	{
 		System.out.print(taken[i] + " ");
 	}

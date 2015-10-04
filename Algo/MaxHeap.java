@@ -2,13 +2,13 @@ class MaxHeap
 {
 	private static int[] heap;
 	private static int insertIndex = 1;
-	
+
 	MaxHeap(int size)
 	{
 		heap = new int[size+1];
 		heap[0] = Integer.MIN_VALUE;
 	}
-	
+
 	public static void insert(int num)
 	{
 		if(insertIndex<heap.length)
@@ -19,7 +19,7 @@ class MaxHeap
 		}
 		printArray();
 	}
-	
+
 	public static void heapify()
 	{
 		if(insertIndex==1)
@@ -42,14 +42,14 @@ class MaxHeap
 			}
 		}
 	}
-	
+
 	public static void printArray()
 	{
 		for(int num:heap)
 			System.out.print(num+"\t");
 		System.out.println();
 	}
-	
+
 	public static void sort()
 	{
 		int[] sortedHeap = new int[heap.length];
@@ -96,7 +96,7 @@ class MaxHeap
 			System.out.println();
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		MaxHeap heap = new MaxHeap(7);

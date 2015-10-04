@@ -55,14 +55,14 @@ SCENE II. A camp near Forres.
   SOLDIER.
     Doubtful it stood;
     As two spent swimmers that do cling together
-    And choke their art. The merciless Macdonwald, 
+    And choke their art. The merciless Macdonwald,
     Worthy to be a rebel, for to that
     The multiplying villainies of nature
     Do swarm upon him, from the Western isles
     Of kerns and gallowglasses is supplied;
     And fortune, on his damned quarrel smiling,
     Show'd like a rebel's whore. But all's too weak;
-    For brave Macbeth, well he deserves that name, 
+    For brave Macbeth, well he deserves that name,
     Disdaining fortune, with his brandish'd steel,
     Which smok'd with bloody execution,
     Like valour's minion,
@@ -98,7 +98,7 @@ SCENE II. A camp near Forres.
     Doubly redoubled strokes upon the foe:
     Except they meant to bathe in reeking wounds,
     Or memorize another Golgotha,
-    I cannot tell: 
+    I cannot tell:
     But I am faint; my gashes cry for help.
 
   DUNCAN.
@@ -198,7 +198,7 @@ SCENE III. A heath near Forres.
     Weary seven-nights nine times nine
     Shall he dwindle, peak, and pine:
     Though his bark cannot be lost,
-    Yet it shall be tempest-tost. 
+    Yet it shall be tempest-tost.
     Look what I have.
 
   SECOND WITCH.
@@ -218,7 +218,7 @@ SCENE III. A heath near Forres.
     Posters of the sea and land,
     Thus do go about, about:
     Thrice to thine, and thrice to mine,
-    And thrice again, to make up nine: 
+    And thrice again, to make up nine:
     Peace! the charm's wound up.
 [Enter Macbeth and Banquo.]
 
@@ -366,7 +366,7 @@ SCENE III. A heath near Forres.
 
   MACBETH.
     [Aside.] Glamis, and Thane of Cawdor:
-    The greatest is behind. Thanks for your pains. 
+    The greatest is behind. Thanks for your pains.
     Do you not hope your children shall be kings,
     When those that gave the Thane of Cawdor to me
     Promis'd no less to them?
@@ -378,13 +378,13 @@ SCENE III. A heath near Forres.
     And oftentimes to win us to our harm,
     The instruments of darkness tell us truths;
     Win us with honest trifles, to betray's
-    In deepest consequence. 
+    In deepest consequence.
     Cousins, a word, I pray you.
 
   MACBETH.
     [Aside.] Two truths are told,
     As happy prologues to the swelling act
-    Of the imperial theme. I thank you, gentlemen. 
+    Of the imperial theme. I thank you, gentlemen.
     [Aside.] This supernatural soliciting
     Cannot be ill; cannot be good: if ill,
     Why hath it given me earnest of success,
@@ -422,7 +422,7 @@ SCENE III. A heath near Forres.
     Give me your favor: my dull brain was wrought
     With things forgotten. Kind gentlemen, your pains
     Are register'd where every day I turn
-    The leaf to read them. Let us toward the king. 
+    The leaf to read them. Let us toward the king.
     Think upon what hath chanc'd; and, at more time,
     The interim having weigh'd it, let us speak
     Our free hearts each to other.
@@ -457,7 +457,7 @@ SCENE IV. Forres. The palace.
     There's no art
     To find the mind's construction in the face:
     He was a gentleman on whom I built
-    An absolute trust. 
+    An absolute trust.
 [Enter Macbeth, Banquo, Ross, and Angus.]
     O worthiest cousin!
     The sin of my ingratitude even now
@@ -521,7 +521,7 @@ SCENE IV. Forres. The palace.
 
   DUNCAN.
     True, worthy Banquo! he is full so valiant;
-    And in his commendations I am fed, 
+    And in his commendations I am fed,
     It is a banquet to me. Let us after him,
     Whose care is gone before to bid us welcome:
     It is a peerless kinsman.
@@ -531,15 +531,15 @@ SCENE V. Inverness. Macbeth's castle.
 [Enter Lady Macbeth, reading a letter.]
 
   LADY MACBETH.
-    "They met me in the day of success; and I have 
-    learned by the perfectest report they have more in them than 
-    mortal knowledge. When I burned in desire to question them 
+    "They met me in the day of success; and I have
+    learned by the perfectest report they have more in them than
+    mortal knowledge. When I burned in desire to question them
     further, they made themselves air, into which they vanished.
-    Whiles I stood rapt in the wonder of it, came missives from the 
-    king, who all-hailed me, 'Thane of Cawdor'; by which title, 
-    before, these weird sisters saluted me, and referred me to the 
+    Whiles I stood rapt in the wonder of it, came missives from the
+    king, who all-hailed me, 'Thane of Cawdor'; by which title,
+    before, these weird sisters saluted me, and referred me to the
     coming on of time, with 'Hail, king that shalt be!'
-    This have I thought good to deliver thee, my dearest partner of greatness; 
+    This have I thought good to deliver thee, my dearest partner of greatness;
     that thou mightst not lose the dues of rejoicing,
     by being ignorant of what greatness is promised thee.
     Lay it to thy heart, and farewell."
@@ -658,7 +658,7 @@ SCENE VI. The same. Before the castle.
 [Enter Lady Macbeth.]
 
   DUNCAN.
-    See, see, our honour'd hostess! 
+    See, see, our honour'd hostess!
     The love that follows us sometime is our trouble,
     Which still we thank as love. Herein I teach you
     How you shall bid God ild us for your pains,
@@ -703,7 +703,7 @@ SCENE VII. Macbeth's castle.
     Could trammel up the consequence, and catch,
     With his surcease, success; that but this blow
     Might be the be-all and the end-all here,
-    But here, upon this bank and shoal of time, 
+    But here, upon this bank and shoal of time,
     We'd jump the life to come. But in these cases
     We still have judgement here; that we but teach
     Bloody instructions, which being taught, return
@@ -784,7 +784,7 @@ SCENE VII. Macbeth's castle.
   LADY MACBETH.
     We fail!
     But screw your courage to the sticking-place,
-    And we'll not fail. When Duncan is asleep, 
+    And we'll not fail. When Duncan is asleep,
     Whereto the rather shall his day's hard journey
     Soundly invite him, his two chamberlains
     Will I with wine and wassail so convince
@@ -836,7 +836,7 @@ SCENE I. Inverness. Court within the castle.
 
   BANQUO.
     Hold, take my sword. There's husbandry in heaven;
-    Their candles are all out: take thee that too. 
+    Their candles are all out: take thee that too.
     A heavy summons lies like lead upon me,
     And yet I would not sleep: merciful powers,
     Restrain in me the cursed thoughts that nature
@@ -896,7 +896,7 @@ SCENE I. Inverness. Court within the castle.
     She strike upon the bell. Get thee to bed.
 [Exit Servant.]
     Is this a dagger which I see before me,
-    The handle toward my hand? Come, let me clutch thee: 
+    The handle toward my hand? Come, let me clutch thee:
     I have thee not, and yet I see thee still.
     Art thou not, fatal vision, sensible
     To feeling as to sight? or art thou but
@@ -935,7 +935,7 @@ SCENE II. The same.
 
   LADY MACBETH.
     That which hath made them drunk hath made me bold:
-    What hath quench'd them hath given me fire. Hark! 
+    What hath quench'd them hath given me fire. Hark!
     Peace!
     It was the owl that shriek'd, the fatal bellman,
     Which gives the stern'st good night. He is about it:
@@ -975,7 +975,7 @@ SCENE II. The same.
     Ay.
 
   MACBETH.
-    Hark! 
+    Hark!
     Who lies i' the second chamber?
 
   LADY MACBETH.
@@ -1035,7 +1035,7 @@ SCENE II. The same.
     Who was it that thus cried? Why, worthy thane,
     You do unbend your noble strength to think
     So brainsickly of things. Go get some water,
-    And wash this filthy witness from your hand. 
+    And wash this filthy witness from your hand.
     Why did you bring these daggers from the place?
     They must lie there: go carry them; and smear
     The sleepy grooms with blood.
@@ -1136,7 +1136,7 @@ SCENE III. The same.
     him.
 
   MACDUFF.
-    Is thy master stirring? 
+    Is thy master stirring?
     Our knocking has awak'd him; here he comes.
 [Enter Macbeth.]
 
@@ -1220,7 +1220,7 @@ SCENE III. The same.
     With a new Gorgon: do not bid me speak;
     See, and then speak yourselves.
 [Exeunt Macbeth and Lennox.]
-    Awake, awake! 
+    Awake, awake!
     Ring the alarum bell: murder and treason!
     Banquo and Donalbain! Malcolm! awake!
     Shake off this downy sleep, death's counterfeit,
@@ -1251,7 +1251,7 @@ SCENE III. The same.
     What, in our house?
 
   BANQUO.
-    Too cruel any where. 
+    Too cruel any where.
     Dear Duff, I pr'ythee, contradict thyself,
     And say it is not so.
 [Re-enter Macbeth and Lennox, with Ross.]
@@ -1328,7 +1328,7 @@ SCENE III. The same.
     Upon the foot of motion.
 
   BANQUO.
-    Look to the lady: 
+    Look to the lady:
 [Lady Macbeth is carried out.]
     And when we have our naked frailties hid,
     That suffer in exposure, let us meet,
@@ -1397,7 +1397,7 @@ SCENE IV. Outside Macbeth's castle.
     Was by a mousing owl hawk'd at and kill'd.
 
   ROSS.
-    And Duncan's horses, a thing most strange and certain, 
+    And Duncan's horses, a thing most strange and certain,
     Beauteous and swift, the minions of their race,
     Turn'd wild in nature, broke their stalls, flung out,
     Contending 'gainst obedience, as they would make
@@ -1460,7 +1460,7 @@ SCENE IV. Outside Macbeth's castle.
     Well, I will thither.
 
   MACDUFF.
-    Well, may you see things well done there, adieu! 
+    Well, may you see things well done there, adieu!
     Lest our old robes sit easier than our new!
 
   ROSS.
@@ -1482,8 +1482,8 @@ SCENE I. Forres. The palace.
     Thou play'dst most foully for't; yet it was said
     It should not stand in thy posterity;
     But that myself should be the root and father
-    Of many kings. If there come truth from them, 
-    As upon thee, Macbeth, their speeches shine, 
+    Of many kings. If there come truth from them,
+    As upon thee, Macbeth, their speeches shine,
     Why, by the verities on thee made good,
     May they not be my oracles as well,
     And set me up in hope? But hush; no more.
@@ -1514,8 +1514,8 @@ SCENE I. Forres. The palace.
     Ay, my good lord.
 
   MACBETH.
-    We should have else desir'd your good advice, 
-    Which still hath been both grave and prosperous, 
+    We should have else desir'd your good advice,
+    Which still hath been both grave and prosperous,
     In this day's council; but we'll take to-morrow.
     Is't far you ride?
 
@@ -1546,7 +1546,7 @@ SCENE I. Forres. The palace.
   MACBETH.
     I wish your horses swift and sure of foot;
     And so I do commend you to their backs.
-    Farewell. 
+    Farewell.
 [Exit Banquo.]
     Let every man be master of his time
     Till seven at night; to make society
@@ -1586,7 +1586,7 @@ SCENE I. Forres. The palace.
     Given to the common enemy of man,
     To make them kings, the seed of Banquo kings!
     Rather than so, come, fate, into the list,
-    And champion me to the utterance! Who's there? 
+    And champion me to the utterance! Who's there?
 [Re-enter Attendant, with two Murderers.]
     Now go to the door, and stay there till we call.
 [Exit Attendant.]
@@ -1678,7 +1678,7 @@ SCENE I. Forres. The palace.
     Perform what you command us.
 
   FIRST MURDERER.
-    Though our lives 
+    Though our lives
 
   MACBETH.
     Your spirits shine through you. Within this hour at most,
@@ -1686,8 +1686,8 @@ SCENE I. Forres. The palace.
     Acquaint you with the perfect spy o' the time,
     The moment on't; for't must be done to-night
     And something from the palace; always thought
-    That I require a clearness; and with him, 
-    To leave no rubs nor botches in the work, 
+    That I require a clearness; and with him,
+    To leave no rubs nor botches in the work,
     Fleance his son, that keeps him company,
     Whose absence is no less material to me
     Than is his father's, must embrace the fate
@@ -1794,7 +1794,7 @@ SCENE II. The palace.
     Which keeps me pale! Light thickens; and the crow
     Makes wing to the rooky wood:
     Good things of day begin to droop and drowse;
-    Whiles night's black agents to their preys do rouse. 
+    Whiles night's black agents to their preys do rouse.
     Thou marvell'st at my words: but hold thee still;
     Things bad begun make strong themselves by ill:
     So, pr'ythee, go with me.
@@ -1899,7 +1899,7 @@ SCENE IV. The same. Hall in the palace.
     For my heart speaks they are welcome.
 
   MACBETH.
-    See, they encounter thee with their hearts' thanks. 
+    See, they encounter thee with their hearts' thanks.
     Both sides are even: here I'll sit i' the midst:
 [Enter First Murderer to the door.]
     Be large in mirth; anon we'll drink a measure
@@ -1953,7 +1953,7 @@ SCENE IV. The same. Hall in the palace.
     Meeting were bare without it.
 
   MACBETH.
-    Sweet remembrancer! 
+    Sweet remembrancer!
     Now, good digestion wait on appetite,
     And health on both!
 
@@ -2013,7 +2013,7 @@ SCENE IV. The same. Hall in the palace.
     O proper stuff!
     This is the very painting of your fear:
     This is the air-drawn dagger which, you said,
-    Led you to Duncan. O, these flaws, and starts, 
+    Led you to Duncan. O, these flaws, and starts,
     Impostors to true fear, would well become
     A woman's story at a winter's fire,
     Authoriz'd by her grandam. Shame itself!
@@ -2021,8 +2021,8 @@ SCENE IV. The same. Hall in the palace.
     You look but on a stool.
 
   MACBETH.
-    Prithee, see there! behold! look! lo! how say you? 
-    Why, what care I? If thou canst nod, speak too. 
+    Prithee, see there! behold! look! lo! how say you?
+    Why, what care I? If thou canst nod, speak too.
     If charnel houses and our graves must send
     Those that we bury back, our monuments
     Shall be the maws of kites.
@@ -2053,11 +2053,11 @@ SCENE IV. The same. Hall in the palace.
     Your noble friends do lack you.
 
   MACBETH.
-    I do forget: 
+    I do forget:
     Do not muse at me, my most worthy friends;
     I have a strange infirmity, which is nothing
     To those that know me. Come, love and health to all;
-    Then I'll sit down. Give me some wine, fill full. 
+    Then I'll sit down. Give me some wine, fill full.
     I drink to the general joy o' the whole table,
     And to our dear friend Banquo, whom we miss:
     Would he were here! to all, and him, we thirst,
@@ -2110,7 +2110,7 @@ SCENE IV. The same. Hall in the palace.
 
   LADY MACBETH.
     I pray you, speak not; he grows worse and worse;
-    Question enrages him: at once, good-night: 
+    Question enrages him: at once, good-night:
     Stand not upon the order of your going,
     But go at once.
 
@@ -2157,7 +2157,7 @@ SCENE IV. The same. Hall in the palace.
 
   MACBETH.
     Come, we'll to sleep. My strange and self-abuse
-    Is the initiate fear that wants hard use: 
+    Is the initiate fear that wants hard use:
     We are yet but young in deed.
 [Exeunt.]
 
@@ -2216,7 +2216,7 @@ SCENE VI. Forres. The palace.
     My former speeches have but hit your thoughts,
     Which can interpret further: only, I say,
     Thing's have been strangely borne. The gracious Duncan
-    Was pitied of Macbeth: marry, he was dead: 
+    Was pitied of Macbeth: marry, he was dead:
     And the right valiant Banquo walk'd too late;
     Whom, you may say, if't please you, Fleance kill'd,
     For Fleance fled. Men must not walk too late.
@@ -2230,7 +2230,7 @@ SCENE VI. Forres. The palace.
     For 'twould have anger'd any heart alive,
     To hear the men deny't. So that, I say,
     He has borne all things well: and I do think,
-    That had he Duncan's sons under his key, 
+    That had he Duncan's sons under his key,
     As, an't please heaven, he shall not, they should find
     What 'twere to kill a father; so should Fleance.
     But, peace! for from broad words, and 'cause he fail'd
@@ -2251,7 +2251,7 @@ SCENE VI. Forres. The palace.
     To ratify the work, we may again
     Give to our tables meat, sleep to our nights;
     Free from our feasts and banquets bloody knives;
-    Do faithful homage, and receive free honours, 
+    Do faithful homage, and receive free honours,
     All which we pine for now: and this report
     Hath so exasperate the king that he
     Prepares for some attempt of war.
@@ -2294,7 +2294,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
 
   FIRST WITCH.
     Round about the caldron go;
-    In the poison'd entrails throw. 
+    In the poison'd entrails throw.
     Toad, that under cold stone,
     Days and nights has thirty-one
     Swelter'd venom sleeping got,
@@ -2310,7 +2310,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
     Eye of newt, and toe of frog,
     Wool of bat, and tongue of dog,
     Adder's fork, and blind-worm's sting,
-    Lizard's leg, and howlet's wing, 
+    Lizard's leg, and howlet's wing,
     For a charm of powerful trouble,
     Like a hell-broth boil and bubble.
 
@@ -2328,7 +2328,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
     Sliver'd in the moon's eclipse,
     Nose of Turk, and Tartar's lips,
     Finger of birth-strangl'd babe
-    Ditch-deliver'd by a drab, 
+    Ditch-deliver'd by a drab,
     Make the gruel thick and slab:
     Add thereto a tiger's chaudron,
     For the ingredients of our caldron.
@@ -2352,7 +2352,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
 
   SECOND WITCH.
     By the pricking of my thumbs,
-    Something wicked this way comes: 
+    Something wicked this way comes:
     Open, locks, whoever knocks!
 [Enter Macbeth.]
 
@@ -2364,7 +2364,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
     A deed without a name.
 
   MACBETH.
-    I conjure you, by that which you profess, 
+    I conjure you, by that which you profess,
     Howe'er you come to know it, answer me:
     Though you untie the winds, and let them fight
     Against the churches; though the yesty waves
@@ -2405,7 +2405,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
 [Thunder. An Apparition of an armed Head rises.]
 
   MACBETH.
-    Tell me, thou unknown power, 
+    Tell me, thou unknown power,
 
   FIRST WITCH.
     He knows thy thought:
@@ -2418,7 +2418,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
 
   MACBETH.
     Whate'er thou art, for thy good caution, thanks;
-    Thou hast harp'd my fear aright: but one word more, 
+    Thou hast harp'd my fear aright: but one word more,
 
   FIRST WITCH.
     He will not be commanded: here's another,
@@ -2476,7 +2476,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
 
   MACBETH.
     I will be satisfied: deny me this,
-    And an eternal curse fall on you! Let me know: 
+    And an eternal curse fall on you! Let me know:
     Why sinks that cauldron? and what noise is this?
 [Hautboys.]
 
@@ -2497,11 +2497,11 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
   MACBETH.
     Thou are too like the spirit of Banquo; down!
     Thy crown does sear mine eyeballs: and thy hair,
-    Thou other gold-bound brow, is like the first; 
+    Thou other gold-bound brow, is like the first;
     A third is like the former. Filthy hags!
     Why do you show me this? A fourth! Start, eyes!
     What, will the line stretch out to the crack of doom?
-    Another yet! A seventh! I'll see no more: 
+    Another yet! A seventh! I'll see no more:
     And yet the eighth appears, who bears a glass
     Which shows me many more; and some I see
     That twofold balls and treble sceptres carry:
@@ -2511,7 +2511,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
 
   FIRST WITCH.
     Ay, sir, all this is so: but why
-    Stands Macbeth thus amazedly? 
+    Stands Macbeth thus amazedly?
     Come,sisters, cheer we up his sprites,
     And show the best of our delights;
     I'll charm the air to give a sound,
@@ -2522,7 +2522,7 @@ SCENE I. A cavern. In the middle, a boiling cauldron.
 
   MACBETH.
     Where are they? Gone? Let this pernicious hour
-    Stand aye accursed in the calendar! 
+    Stand aye accursed in the calendar!
     Come in, without there!
 [Enter Lennox.]
 
@@ -2798,8 +2798,8 @@ SCENE III. England. Before the King's palace.
 
   MALCOLM.
     Perchance even there where I did find my doubts.
-    Why in that rawness left you wife and child, 
-    Those precious motives, those strong knots of love, 
+    Why in that rawness left you wife and child,
+    Those precious motives, those strong knots of love,
     Without leave-taking? I pray you,
     Let not my jealousies be your dishonours,
     But mine own safeties: you may be rightly just,
@@ -3009,7 +3009,7 @@ SCENE III. England. Before the King's palace.
     Stands Scotland where it did?
 
   ROSS.
-    Alas, poor country, 
+    Alas, poor country,
     Almost afraid to know itself! It cannot
     Be call'd our mother, but our grave: where nothing,
     But who knows nothing, is once seen to smile;
@@ -3104,7 +3104,7 @@ SCENE III. England. Before the King's palace.
     To add the death of you.
 
   MALCOLM.
-    Merciful heaven! 
+    Merciful heaven!
     What, man! ne'er pull your hat upon your brows;
     Give sorrow words: the grief that does not speak
     Whispers the o'er-fraught heart, and bids it break.
@@ -3264,7 +3264,7 @@ SCENE I. Dunsinane. Ante-room in the castle.
     dignity of the whole body.
 
   DOCTOR.
-    Well, well, well, 
+    Well, well, well,
 
   GENTLEWOMAN.
     Pray God it be, sir.
@@ -3298,7 +3298,7 @@ SCENE I. Dunsinane. Ante-room in the castle.
     Foul whisperings are abroad: unnatural deeds
     Do breed unnatural troubles: infected minds
     To their deaf pillows will discharge their secrets.
-    More needs she the divine than the physician. 
+    More needs she the divine than the physician.
     God, God, forgive us all! Look after her;
     Remove from her the means of all annoyance,
     And still keep eyes upon her: so, good-night:
@@ -3378,7 +3378,7 @@ SCENE III. Dunsinane. A room in the castle.
     Till Birnam wood remove to Dunsinane
     I cannot taint with fear. What's the boy Malcolm?
     Was he not born of woman? The spirits that know
-    All mortal consequences have pronounc'd me thus, 
+    All mortal consequences have pronounc'd me thus,
     "Fear not, Macbeth; no man that's born of woman
     Shall e'er have power upon thee." Then fly, false thanes,
     And mingle with the English epicures:
@@ -3389,7 +3389,7 @@ SCENE III. Dunsinane. A room in the castle.
     Where gott'st thou that goose look?
 
   SERVANT.
-    There is ten thousand 
+    There is ten thousand
 
   MACBETH.
     Geese, villain?
@@ -3419,7 +3419,7 @@ SCENE III. Dunsinane. A room in the castle.
     I must not look to have; but, in their stead,
     Curses, not loud but deep, mouth-honour, breath,
     Which the poor heart would fain deny, and dare not.
-    Seyton! 
+    Seyton!
 [Enter Seyton.]
 
   SEYTON.
@@ -3441,7 +3441,7 @@ SCENE III. Dunsinane. A room in the castle.
   MACBETH.
     I'll put it on.
     Send out more horses, skirr the country round;
-    Hang those that talk of fear. Give me mine armour. 
+    Hang those that talk of fear. Give me mine armour.
     How does your patient, doctor?
 
   DOCTOR.
@@ -3463,14 +3463,14 @@ SCENE III. Dunsinane. A room in the castle.
     Must minister to himself.
 
   MACBETH.
-    Throw physic to the dogs, I'll none of it. 
-    Come, put mine armour on; give me my staff: 
-    Seyton, send out. Doctor, the Thanes fly from me. 
+    Throw physic to the dogs, I'll none of it.
+    Come, put mine armour on; give me my staff:
+    Seyton, send out. Doctor, the Thanes fly from me.
     Come, sir, despatch. If thou couldst, doctor, cast
     The water of my land, find her disease,
     And purge it to a sound and pristine health,
     I would applaud thee to the very echo,
-    That should applaud again. Pull't off, I say. 
+    That should applaud again. Pull't off, I say.
     What rhubarb, senna, or what purgative drug,
     Would scour these English hence? Hear'st thou of them?
 
@@ -3479,7 +3479,7 @@ SCENE III. Dunsinane. A room in the castle.
     Makes us hear something.
 
   MACBETH.
-    Bring it after me. 
+    Bring it after me.
     I will not be afraid of death and bane,
     Till Birnam forest come to Dunsinane.
 [Exeunt all except Doctor.]
@@ -3574,7 +3574,7 @@ SCENE V. Dunsinane. Within the castle.
 
   MACBETH.
     She should have died hereafter;
-    There would have been a time for such a word. 
+    There would have been a time for such a word.
     To-morrow, and to-morrow, and to-morrow,
     Creeps in this petty pace from day to day,
     To the last syllable of recorded time;
@@ -3614,16 +3614,16 @@ SCENE V. Dunsinane. Within the castle.
     If thou speak'st false,
     Upon the next tree shalt thou hang alive,
     Till famine cling thee: if thy speech be sooth,
-    I care not if thou dost for me as much. 
+    I care not if thou dost for me as much.
     I pull in resolution; and begin
     To doubt the equivocation of the fiend
     That lies like truth. "Fear not, till Birnam wood
     Do come to Dunsinane;" and now a wood
-    Comes toward Dunsinane. Arm, arm, and out! 
+    Comes toward Dunsinane. Arm, arm, and out!
     If this which he avouches does appear,
     There is nor flying hence nor tarrying here.
     I 'gin to be a-weary of the sun,
-    And wish the estate o' the world were now undone. 
+    And wish the estate o' the world were now undone.
     Ring the alarum bell! Blow, wind! come, wrack!
     At least we'll die with harness on our back.
 [Exeunt.]
@@ -3640,7 +3640,7 @@ SCENE VI. Dunsinane. Before the castle.
     According to our order.
 
   SIWARD.
-    Fare you well. 
+    Fare you well.
     Do we but find the tyrant's power to-night,
     Let us be beaten, if we cannot fight.
 
@@ -3685,7 +3685,7 @@ SCENE VII. The same. Another part of the field.
 [They fight, and young Siward is slain.]
 
   MACBETH.
-    Thou wast born of woman. 
+    Thou wast born of woman.
     But swords I smile at, weapons laugh to scorn,
     Brandish'd by man that's of a woman born.
 [Exit.]
@@ -3738,7 +3738,7 @@ SCENE VIII. The same. Another part of the field.
     With blood of thine already.
 
   MACDUFF.
-    I have no words, 
+    I have no words,
     My voice is in my sword: thou bloodier villain
     Than terms can give thee out!
 [They fight.]
@@ -3837,7 +3837,7 @@ SCENE VIII. The same. Another part of the field.
     The usurper's cursed head: the time is free:
     I see thee compass'd with thy kingdom's pearl
     That speak my salutation in their minds;
-    Whose voices I desire aloud with mine, 
+    Whose voices I desire aloud with mine,
     Hail, King of Scotland!
 
   ALL.
@@ -3850,11 +3850,11 @@ SCENE VIII. The same. Another part of the field.
     And make us even with you. My thanes and kinsmen,
     Henceforth be earls, the first that ever Scotland
     In such an honour nam'd. What's more to do,
-    Which would be planted newly with the time, 
+    Which would be planted newly with the time,
     As calling home our exil'd friends abroad,
     That fled the snares of watchful tyranny;
     Producing forth the cruel ministers
-    Of this dead butcher, and his fiend-like queen, 
+    Of this dead butcher, and his fiend-like queen,
     Who, as 'tis thought, by self and violent hands
     Took off her life; this, and what needful else
     That calls upon us, by the grace of Grace,

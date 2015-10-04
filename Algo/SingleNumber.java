@@ -1,6 +1,6 @@
 class SingleNumber
 {
-	public int singleNumber(int[] A) 
+	public int singleNumber(int[] A)
     {
 		int xor=0;
 		for(int i=0;i<A.length;i++)

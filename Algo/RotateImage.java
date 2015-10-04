@@ -35,7 +35,7 @@ class RotateImage
 				image[length-i][j] = image[length][length-i];
 				//printMatrix(image);
 				//top-right -> right-bottom
-				image[length][length-i] = image[i][length]; 
+				image[length][length-i] = image[i][length];
 				//printMatrix(image);
 				//top-left -> top-right
 				image[i][length] = temp;

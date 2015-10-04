@@ -10,7 +10,7 @@ class SearchARange
 		}
 		return range;
     }
-	
+
 	public int[] helper(int[] a, int target, int lo, int hi, int[] range)
 	{
 		if(lo>hi)
@@ -35,12 +35,12 @@ class SearchARange
 			helper(a, target, mid+1, hi, range);
 		}
 		else if(a[mid] > target)
-		{	
+		{
 			helper(a, target, lo, mid-1, range);
 		}
 		return range;
 	}
-	
+
 	public static void main(String args[])
 	{
 		SearchARange s = new SearchARange();

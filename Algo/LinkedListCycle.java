@@ -17,7 +17,7 @@ public class LinkedListCycle
             a = a.next;
             if(b.next!=null)
                 b = b.next.next;
-			else 
+			else
 				return false;
         }
 		if(b==null)
@@ -25,7 +25,7 @@ public class LinkedListCycle
 		else
 			return true;
     }
-	
+
 	public static void main(String args[])
 	{
 		ListNode head = new ListNode(1);
@@ -36,11 +36,11 @@ public class LinkedListCycle
 	}
 }
 
-class ListNode 
+class ListNode
 {
     int val;
     ListNode next;
-    ListNode(int x) 
+    ListNode(int x)
 	{
         val = x;
         next = null;
