@@ -10,7 +10,7 @@ class TwoSum
 		TwoSum ts = new TwoSum();
 		ts.findTwoSum(arr, target, result);
 	}
-	
+
 	public void findTwoSum(int[] arr, int target, int[] result)
 	{
 		for(int i=0;i<arr.length;i++)
@@ -19,7 +19,7 @@ class TwoSum
 			{
 				result[0] = hashMap.get(arr[i])+1;
 				result[1] = i+1;
-			} 
+			}
 			else
 			{
 				hashMap.put(target-arr[i], i);

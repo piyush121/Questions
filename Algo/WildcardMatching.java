@@ -1,6 +1,6 @@
 class WildcardMatching
 {
-	public boolean isMatch(String s, String p) 
+	public boolean isMatch(String s, String p)
     {
         char[] sa = s.toCharArray();
 		char[] pa = p.toCharArray();
@@ -34,7 +34,7 @@ class WildcardMatching
 		else
 			return true;
     }
-	
+
 	public static void main(String args[])
 	{
 		WildcardMatching w = new WildcardMatching();
@@ -47,4 +47,3 @@ class WildcardMatching
 		System.out.println(w.isMatch("aab", "c*a*b")); //false
 	}
 }
-

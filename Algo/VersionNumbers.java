@@ -13,7 +13,7 @@ class VersionNumbers
 			if(Integer.parseInt(v1[i]) 	> Integer.parseInt(v2[i]))
 				return 1;
 			else if(Integer.parseInt(v1[i]) < Integer.parseInt(v2[i]))
-				return -1;	
+				return -1;
 			i++;
 			j++;
 		}
@@ -25,7 +25,7 @@ class VersionNumbers
 				return -1;
 		return 0;
     }
-	
+
 	public static void main(String args[])
 	{
 		VersionNumbers vn = new VersionNumbers();

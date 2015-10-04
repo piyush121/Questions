@@ -11,12 +11,12 @@ class UnionFind
 			id[i] = i;
 		}
 	}
-	
+
 	public boolean find(int p, int q)
 	{
 		return id[p]==id[q];
 	}
-	
+
 	public void union(int p, int q)
 	{
 		int pid = id[p];
@@ -25,5 +25,5 @@ class UnionFind
 			if(id[i]==pid)
 				id[i] = id[q];
 		}
-	}	
+	}
 }

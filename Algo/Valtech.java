@@ -21,7 +21,7 @@ class Valtech
 
 			while((s=reader.readLine())!=null)
 			{
-				set.add(s);	
+				set.add(s);
 			}
 		}
 		catch(IOException e)
@@ -29,12 +29,12 @@ class Valtech
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void findAnagram(String s)
 	{
 		helper("", s);
 	}
-	
+
 	public void helper(String curr, String rest)
 	{
 		if("".equals(rest))
@@ -43,9 +43,9 @@ class Valtech
 		{
 			helper(curr + rest.charAt(i), rest.substring(0,i)+rest.substring(i+1));
 		}
-			
+
 	}
-	
+
 	public static void main(String args[]) throws IOException
 	{
 		Valtech v = new Valtech();

@@ -32,7 +32,7 @@ class WordSearch
 	}
 
 	//Backtracking
-	public boolean existHelper(int i, int j, char[][] board, String word, int pos, boolean[][] visited) 
+	public boolean existHelper(int i, int j, char[][] board, String word, int pos, boolean[][] visited)
 	{
 		if(pos==word.length())
 			return true;

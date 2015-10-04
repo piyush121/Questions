@@ -8,7 +8,7 @@ class ValidPalindrome
 		//System.out.println(vp.method1(str));
 		System.out.println(vp.method2(str));
 	}
-	
+
 	public boolean method1(String str)
 	{
 		str = str.replaceAll("[^0-9A-z]", "").toLowerCase();
@@ -16,7 +16,7 @@ class ValidPalindrome
 		if(str.length()<2)
 			return true;
 		for(int i=0;i<str.length();i++)
-		{	
+		{
 			if(str.charAt(i)!=str.charAt(str.length()-1-i))
 			{
 				return false;
@@ -24,7 +24,7 @@ class ValidPalindrome
 		}
 		return true;
 	}
-	
+
 	public boolean method2(String str)
 	{
 		str = str.replaceAll("[^0-9A-z]", "").toLowerCase();
@@ -36,7 +36,7 @@ class ValidPalindrome
 		while(index < str.length()/2)
 		{
 			stack.push(str.charAt(index));
-			index++;	
+			index++;
 		}
 		if(str.length()%2==1)
 		{
