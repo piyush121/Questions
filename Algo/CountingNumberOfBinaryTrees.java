@@ -1,7 +1,7 @@
 class CountingNumberOfBinaryTrees
 {
 	//not efficient time limit exceeded
-	public int numTrees(int n) 
+	public int numTrees(int n)
 	{
 		int sum = 0;
 		if(n==0 || n==1)
@@ -14,7 +14,7 @@ class CountingNumberOfBinaryTrees
 		}
 		return sum;
     }
-	
+
 	public static void main(String args[])
 	{
 		CountingNumberOfBinaryTrees c = new CountingNumberOfBinaryTrees();

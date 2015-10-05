@@ -7,7 +7,7 @@ class Permute
 		String end = word.substring(i);
 		return start + c + end;
 	}
-	
+
 	public static ArrayList<String> permute(String word)
 	{
 		ArrayList<String> permutations = new ArrayList<String>();
@@ -32,7 +32,7 @@ class Permute
 		}
 		return permutations;
 	}
-	
+
 	public static void permutations(String prefix, String word)
 	{
 		if(word.length() == 0)
@@ -43,7 +43,7 @@ class Permute
 				permutations(prefix+word.charAt(i), word.substring(0,i)+word.substring(i+1));
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		String word = "ABCD";

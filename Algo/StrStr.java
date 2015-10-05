@@ -1,7 +1,7 @@
 //Use substring and equals method 
 class StrStr
 {
-	public int strStr(String haystack, String needle) 
+	public int strStr(String haystack, String needle)
 	{
         if(needle.length()>haystack.length())
 			return -1;
@@ -24,7 +24,7 @@ class StrStr
 		}
 		return -1;
     }
-	
+
 	public static void main(String args[])
 	{
 		StrStr s = new StrStr();

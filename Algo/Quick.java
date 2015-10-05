@@ -33,16 +33,16 @@ class Quick
 	public int choosePivot(int lo, int hi)
 	{
 		Random r = new Random();
-		return lo + (r.nextInt(hi-lo+1)); 
+		return lo + (r.nextInt(hi-lo+1));
 	}
-	
+
 	public void printArray(int[] num)
 	{
 		for(int x: num)
 			System.out.print(x+" ");
 		System.out.println();
 	}
-	
+
 	public static void main(String args[])
 	{
 		int num[] = {0, 7, 8, 2, 3, 9, 4, 5};

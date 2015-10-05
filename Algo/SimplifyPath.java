@@ -1,11 +1,11 @@
 import java.util.Stack;
 class SimplifyPath
 {
-	public String simplifyPath(String path) 
+	public String simplifyPath(String path)
 	{
 		if(path.length()==1 && path.equals("/"))
 			return path;
-			
+
 		Stack<String> stack = new Stack<String>();
 		stack.push("/");
 		String[] tokens = path.split("/");
@@ -22,12 +22,12 @@ class SimplifyPath
 				stack.push(token);
 			}
 		}
-		System.out.println(stack);	
+		System.out.println(stack);
 		String s = "";
 		while(!stack.isEmpty())
 		{
 			if(!stack.peek().equals("/"))
-				s = "/"+stack.pop()+s; 
+				s = "/"+stack.pop()+s;
 			else
 				break;
 		}
@@ -37,14 +37,14 @@ class SimplifyPath
 			s = "/"+s;
 		return s;
     }
-	
+
 	public void printArray(String[] a)
 	{
 		System.out.println("length: "+a.length);
 		for(String s:a)
 			System.out.print(s+" ");
 	}
-	
+
 	public static void main(String args[])
 	{
 		//String path = "/home/";

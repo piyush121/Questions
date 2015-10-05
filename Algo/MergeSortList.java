@@ -4,7 +4,7 @@ public class MergeSortList
 	{
 		if(head==null || head.next==null)
 			return head;
-			
+
 		ListNode l = head;
 		ListNode r = head;
 		ListNode prev = null;
@@ -28,15 +28,15 @@ public class MergeSortList
 		ListNode h2 = divide(r);
 		return merge(h1,h2);
 	}
-	
+
 	public ListNode merge(ListNode l, ListNode r)
 	{
 		ListNode p1 = l;
 		ListNode p2 = r;
-		
+
 		ListNode newList = new ListNode(Integer.MAX_VALUE);
 		ListNode fakeHead = newList;
-		
+
 		while(p1!=null || p2!=null)
 		{
 			if(p1==null)
@@ -65,7 +65,7 @@ public class MergeSortList
 				p1 = p1.next;
 				p2 = p2.next;
 			}
-			else 
+			else
 			{
 				newList.next = new ListNode(p2.val);
 				p2 = p2.next;
@@ -74,7 +74,7 @@ public class MergeSortList
 		}
 		return fakeHead.next;
 	}
-	
+
 	public static void main(String args[])
 	{
 		MergeSortList m = new MergeSortList();
@@ -84,7 +84,7 @@ public class MergeSortList
 		node.next.next = new ListNode(3);
 		node.next.next.next = new ListNode(5);
 		node.next.next.next.next = new ListNode(2);
-		
+
 		ListNode head = m.divide(node);
 		while(head!=null)
 		{
@@ -98,7 +98,7 @@ class ListNode
 {
 	ListNode next;
 	int val;
-	
+
 	public ListNode(int val)
 	{
 		this.val = val;

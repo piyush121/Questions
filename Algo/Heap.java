@@ -2,24 +2,24 @@ class Heap
 {
 	private int[] heap;
 	private int heapSize;
-	
+
 	public Heap(int heapSize, int[] heap)
 	{
 		this.heapSize = heapSize;
 		this.heap = heap;
 	}
-	
+
 	public void maxHeapify(int index)
 	{
 		int leftIndex = index<<1;
 		int rightIndex = (index<<1) + 1;
-		
+
 		int largest = index;
 		System.out.println("leftIndex:"+leftIndex+" rightIndex: "+rightIndex+" largest: "+largest+" heapSize: "+heapSize);
 		if(leftIndex > heapSize)
 			return;
 		if(leftIndex <= heapSize && heap[index] < heap[leftIndex])
-		{	
+		{
 			largest = leftIndex;
 		}
 		if(rightIndex <= heapSize && heap[largest] < heap[rightIndex])
@@ -32,7 +32,7 @@ class Heap
 			heap[largest] = heap[index];
 			heap[index] = temp;
 		}
-		else 
+		else
 		{
 			return;
 		}
@@ -40,13 +40,13 @@ class Heap
 		System.out.println();
 		maxHeapify(largest);
 	}
-	
+
 	public void buildMaxHeap()
 	{
 		for(int i =(heap.length-1)/2;i>=1;i--)
 			maxHeapify(i);
 	}
-	
+
 	public void heapSort()
 	{
 		buildMaxHeap();
@@ -61,13 +61,13 @@ class Heap
 		}
 		printHeap();
 	}
-	
+
 	public void printHeap()
 	{
 		for(int i=1;i<=heap.length-1;i++)
 			System.out.print(heap[i]+" ");
 	}
-	
+
 	public static void main(String args[])
 	{
 		int[] a = {Integer.MIN_VALUE, 1, 2, 3, 4, 5, 6, 7, 8, 9};

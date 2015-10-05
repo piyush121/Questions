@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 public class LevelOrderTraversal
 {
-	public List<List<Integer>> levelOrder(TreeNode root) 
+	public List<List<Integer>> levelOrder(TreeNode root)
 	{
 		List<List<Integer>> nodeList = new ArrayList<List<Integer>>();
 		if(root==null)
@@ -28,7 +28,7 @@ public class LevelOrderTraversal
 				}
 				if(node.right!=null)
 				{
-					
+
 					next.add(node.right);
 				}
 				//System.out.println(b);
@@ -37,7 +37,7 @@ public class LevelOrderTraversal
 		}
 		return nodeList;
     }
-	
+
 	public static void main(String args[])
 	{
 		LevelOrderTraversal lot = new LevelOrderTraversal();
@@ -51,14 +51,14 @@ public class LevelOrderTraversal
 		System.out.println(lot.levelOrder(root));
 	}
 }
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

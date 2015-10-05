@@ -13,7 +13,7 @@ class FloodFill
 			System.out.println();
 		}
 	}
-	
+
 	public void helper(int[][] screen, int x, int y, int prevC, int newC)
 	{
 		if(x>=screen.length || y>=screen[screen.length-1].length || x <0 || y<0)
@@ -26,7 +26,7 @@ class FloodFill
 		helper(screen, x, y+1, prevC, newC);
 		helper(screen, x, y-1, prevC, newC);
 	}
-	
+
 	public static void main(String args[])
 	{
 		FloodFill ff = new FloodFill();
@@ -41,6 +41,6 @@ class FloodFill
                      };
 		int x = 4, y = 4, newC = 3;
 		ff.floodFill(screen , x, y , 3);
-		
+
 	}
 }

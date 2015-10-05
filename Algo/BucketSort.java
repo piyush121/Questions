@@ -15,7 +15,7 @@ class BucketSort
 			bucket.get(index).add(num[i]);
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		double [] arr = {0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434};

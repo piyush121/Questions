@@ -19,7 +19,7 @@ class ExcelTitle
 		}
 		return s;
 	}
-	
+
 	public static void main(String args[])
 	{
 		ExcelTitle et = new ExcelTitle();
@@ -27,7 +27,7 @@ class ExcelTitle
 		System.out.println(et.convertToTitle(n));
 		System.out.println(et.convertToTitle1(n));
 	}
-	
+
 	 public String convertToTitle1(int n) {
         String s = "";
         String map = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

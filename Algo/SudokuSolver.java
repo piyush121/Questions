@@ -6,7 +6,7 @@ class SudokuSolver
         int N = board.length;
         solve(board, N);
     }
-    
+
     private boolean isSafe(int row, int col, char c, char[][] sudoku, int N)
 	{
 		if(isSafeRow(row, col, c, sudoku, N) && isSafeCol(row, col, c, sudoku, N) && isSafeBox(row, col, c, sudoku, N))
@@ -91,7 +91,7 @@ class SudokuSolver
 					return true;
 				sudoku[row][col] = '.';
 			}
-		}	
+		}
 		return false;
 	}
 
@@ -106,7 +106,7 @@ class SudokuSolver
 	}
 
 	public static void main(String args[])
-	{	
+	{
 		String[] s = {"..9748...","7........",".2.1.9...","..7...24.",".64.1.59.",".98...3..","...8.3.2.","........6","...2759.."};
 		char[][] board = new char[s.length][s.length];
 		for(int i=0;i<s.length;i++)

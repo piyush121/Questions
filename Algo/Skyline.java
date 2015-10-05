@@ -20,7 +20,7 @@ class Skyline
 		}
 		return block;
 	}
-	
+
 	public static void main(String args[])
 	{
 		Skyline skyline = new Skyline();

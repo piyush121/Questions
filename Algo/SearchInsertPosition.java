@@ -5,7 +5,7 @@ class SearchInsertPosition
 	{
         return helper(A, target, 0, A.length-1);
     }
-	
+
 	public int helper(int[] a , int target, int lo, int hi)
 	{
 		if(lo>hi)
@@ -15,7 +15,7 @@ class SearchInsertPosition
 		}
 		int mid = lo +(hi-lo)/2;
 		if(a[mid]==target)
-		{	
+		{
 			index = mid;
 			return index;
 		}
@@ -29,7 +29,7 @@ class SearchInsertPosition
 		}
 		return index;
 	}
-	
+
 	public static void main(String args[])
 	{
 		int[] a = {1,3};

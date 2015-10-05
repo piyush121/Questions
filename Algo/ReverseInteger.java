@@ -1,6 +1,6 @@
 class ReverseInteger
 {
-	public int reverse(int x) 
+	public int reverse(int x)
     {
         long result = 0;
 		int m = 0;
@@ -14,7 +14,7 @@ class ReverseInteger
 			return 0;
 		return (int)result;
     }
-	
+
 	public static void main(String args[])
 	{
 		ReverseInteger r = new ReverseInteger();

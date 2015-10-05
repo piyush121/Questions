@@ -65,7 +65,7 @@ class MinimumPathSum
     	if(i==0 && j==0)
     	{
     		dp[i][j] = grid[i][j];
-    		return dp[i][j];	
+    		return dp[i][j];
     	}
     	else
     	{

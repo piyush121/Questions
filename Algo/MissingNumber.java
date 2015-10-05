@@ -8,7 +8,7 @@ class MissingNumber
 		System.out.println(solution.missingNumber(nums));
 	}
 
-	public int missingNumber(int[] nums) 
+	public int missingNumber(int[] nums)
 	{
 		int sum = 0;
 		int max = Integer.MIN_VALUE;
@@ -19,7 +19,7 @@ class MissingNumber
         	if(num > max)
         		max = num;
         	if(num < min)
-        		min = num; 
+        		min = num;
         }
         if(min!=0)
         	return 0;

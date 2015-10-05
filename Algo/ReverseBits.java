@@ -1,7 +1,7 @@
 class ReverseBits
 {
-	public int reverseBits(int n) 
-	{	
+	public int reverseBits(int n)
+	{
 		int l=0;
 		//String s ="";
 		for(int i=0;i<32;i++)
@@ -11,14 +11,14 @@ class ReverseBits
 			n = n >>> 1;
 			//System.out.println(s);
 		}
-		
+
 		return l;
     }
-	
+
 	public static void main(String args[])
 	{
 		ReverseBits r = new ReverseBits();
 		System.out.println(r.reverseBits(43261596));
 	}
-	
+
 }

@@ -1,6 +1,6 @@
 class Divide
 {
-	public int divide(int dividend, int divisor) 
+	public int divide(int dividend, int divisor)
     {
         if(divisor == 0)
             return Integer.MAX_VALUE;
@@ -25,7 +25,7 @@ class Divide
 		else
 			return 0-count;
     }
-	
+
 	public static void main(String args[])
 	{
 		long start = System.currentTimeMillis();

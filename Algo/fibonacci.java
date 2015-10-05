@@ -10,7 +10,7 @@ class fibonacci
 		for(int i=0;i<10;i++)
 			System.out.print(f.fibRecursion(i)+" ");
 	}
-	
+
 	public int fib(int n)
 	{
 		if( n==0)
@@ -21,7 +21,7 @@ class fibonacci
 		{
 			return fib1;
 		}
-		else 
+		else
 		{
 			int fibn = fib2 + fib1;
 			fib2 = fib1;
@@ -29,14 +29,14 @@ class fibonacci
 			return fibn;
 		}
 	}
-	
+
 	public int fibRecursion(int num)
 	{
 		if(num==0)
 			return 0;
 		else if(num==1)
 			return 1;
-		else 
+		else
 			return fibRecursion(num-2) + fibRecursion(num-1);
 	}
 }

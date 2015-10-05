@@ -32,7 +32,7 @@ class Triangle
 		}
 		System.out.println(triangle.maxPathSum(t1));
 	}
-	
+
 	public int maxPathSum(ArrayList<ArrayList<Integer>> t)
 	{
 		for(int i=t.size()-2;i>=0;i--)

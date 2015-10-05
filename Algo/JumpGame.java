@@ -1,5 +1,5 @@
 class JumpGame
-{	
+{
 	public static void main(String args[])
 	{
 		JumpGame jg = new JumpGame();
@@ -10,7 +10,7 @@ class JumpGame
 		System.out.println(jg.canJump(A));
 	}
 
-	public boolean canJump(int[] nums) 
+	public boolean canJump(int[] nums)
 	{
 		if(nums.length==1)
 			return nums[0]==0?false:true;

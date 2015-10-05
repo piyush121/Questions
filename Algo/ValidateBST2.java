@@ -8,17 +8,17 @@ public class ValidateBST2
 	{
 		if(root==null)
 			return true;
-		if(root.val>min && root.val<max 
+		if(root.val>min && root.val<max
 			&& helper(root.left, min, root.val)
 			&& helper(root.right, root.val, max))
 			{
 				System.out.println(min+" "+root.val+" "+max);
 				return true;
 			}
-		else 
+		else
 			return false;
 	}
-	
+
 	public static void main(String args[])
 	{
 		ValidateBST2 v = new ValidateBST2();
@@ -34,7 +34,7 @@ class TreeNode
 	int val;
 	TreeNode left;
 	TreeNode right;
-	
+
 	TreeNode(int val)
 	{
 		this.val = val;

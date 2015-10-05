@@ -18,7 +18,7 @@ public class InsertionSortList
 					printList(head);
 					System.out.println(b.val);
 					head = insertNode(b, head);
-				}	
+				}
 			}
 			//if(a.next!=null)
 			//	a = a.next;
@@ -27,7 +27,7 @@ public class InsertionSortList
 		printList(head);
 		return head;
     }
-	
+
 	public ListNode insertNode(ListNode inode, ListNode head)
 	{
 		ListNode a = head;
@@ -45,7 +45,7 @@ public class InsertionSortList
 			head = inode;
 		}
 		else
-		{	
+		{
 			while(b.next!=a)
 			{
 				b = b.next;
@@ -55,7 +55,7 @@ public class InsertionSortList
 		}
 		return head;
 	}
-	
+
 	public void printList(ListNode head)
 	{
 		ListNode a = head;
@@ -66,7 +66,7 @@ public class InsertionSortList
 		}
 		System.out.println();
 	}
-	
+
 	public static void main(String[] args)
 	{
 		InsertionSortList isl = new InsertionSortList();
@@ -77,17 +77,17 @@ public class InsertionSortList
 		//head.next.next.next.next = new ListNode(2);
 		isl.printList(head);
 		isl.insertionSortList(head);
-		
+
 		ListNode head1 = new ListNode(3);
 		head1.next = new ListNode(4);
 		head1.next.next = new ListNode(1);
 		isl.printList(head1);
 		isl.insertionSortList(head1);
-		
+
 	}
 }
 
-class ListNode 
+class ListNode
 {
     int val;
     ListNode next;

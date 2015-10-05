@@ -5,12 +5,12 @@ import java.util.HashMap;
 public class BloodLine
 {
 	static HashMap<String, TreeNode> map = new HashMap<String, TreeNode>();
-	
+
 	public void bfs(TreeNode parent)
 	{
 		LinkedList<TreeNode> curr = new LinkedList<TreeNode>();
 		LinkedList<TreeNode> next = new LinkedList<TreeNode>();
-		
+
 		next.add(parent);
 		while(!next.isEmpty())
 		{
@@ -35,7 +35,7 @@ public class BloodLine
 			System.out.println();
 		}
 	}
-	
+
 	public void associate(String parentName, String childName)
 	{
 		TreeNode parent = null;
@@ -60,7 +60,7 @@ public class BloodLine
 		map.put(childName, childNode);
 		parent.childs.add(childNode);
 	}
-	
+
 	public static void main(String args[])
 	{
 		BloodLine bl = new BloodLine();
@@ -81,7 +81,7 @@ class TreeNode
 {
 	String name;
 	ArrayList<TreeNode> childs;
-	
+
 	public TreeNode(String name)
 	{
 		this.name = name;

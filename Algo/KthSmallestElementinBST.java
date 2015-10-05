@@ -11,15 +11,15 @@ class KthSmallestElementinBST
 		root.right = solution.new TreeNode(3);
 		root.right.right = solution.new TreeNode(5);
 		root.right.right.left = solution.new TreeNode(4);
-		
+
 		System.out.println(solution.kthSmallest(root, 3));
 	}
 
-	public int kthSmallest(TreeNode root, int k) 
+	public int kthSmallest(TreeNode root, int k)
 	{
 		List<Integer> list  = null;
     	if(root==null)
-    		return -1;    
+    		return -1;
     	else
     	{
     		list = new ArrayList<Integer>();

@@ -24,7 +24,7 @@ class MajorityElement
 		}
 		return -1;
 	}
-	
+
 	public int majorityElementEffecient(int[] num)
 	{
 		if(num.length==1)
@@ -53,14 +53,14 @@ class MajorityElement
 		}
 		return count!=0?Integer.parseInt(n):-1;
 	}
-	
+
 	public static void main(String args[])
 	{
 		MajorityElement m = new MajorityElement();
 		int[] num = {-1,-1,245};
 		System.out.println(m.majorityElementEffecient(num));
 	}
-	
+
 	public int majorityTwoLine(int[] num)
 	{
 		Arrays.sort(num);

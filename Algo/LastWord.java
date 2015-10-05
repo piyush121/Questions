@@ -1,6 +1,6 @@
 class LastWord
 {
-	public int lengthOfLastWord(String s) 
+	public int lengthOfLastWord(String s)
 	{
 		if(s==null || s.length()==0)
 			return 0;
@@ -10,7 +10,7 @@ class LastWord
 		else
 			return a[a.length-1].length();
     }
-	
+
 	public static void main(String args[])
 	{
 		LastWord l = new LastWord();

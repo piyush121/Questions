@@ -16,7 +16,7 @@ class Denominations
 			}
 		}
 	}
-	
+
 	public static void findDenominations(int amount, int n, String s, char prev)
 	{
 		if(n> amount)
@@ -35,7 +35,7 @@ class Denominations
 				findDenominations(amount, n+1,s+"p",'p');
 		}
 	}
-	
+
 	public static void main(String[] args)
 	{
 		findDenominations(15, 0, "", 'q');

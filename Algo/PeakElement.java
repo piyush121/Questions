@@ -10,7 +10,7 @@ class PeakElement
 		{
 			if(num[0]>num[1])
 				return 0;
-			else	
+			else
 				return 1;
 		}
 		if(num[0]>num[1])
@@ -21,30 +21,30 @@ class PeakElement
 		{
 			if(num[i]>num[i-1] && num[i]>num[i+1])
 				return i;
-		} 
+		}
 	}
-	//efficient by using binary search. treat it as a graph 
+	//efficient by using binary search. treat it as a graph
 	//peak element will be right of increasing indexes and left of decreasing indexes
-	public int findPeakElement(int[] num) 
-	{ 
-		int l = 0; 
-		int r = num.length-1; 
-		int mid = r/2; 
+	public int findPeakElement(int[] num)
+	{
+		int l = 0;
+		int r = num.length-1;
+		int mid = r/2;
 		while (l<r)
-		{ 
+		{
 			if(num[mid]<num[mid+1])
-			{ 
-				l=mid+1; 
+			{
+				l=mid+1;
 			}
 			else
-			{ 
-					r=mid; 
+			{
+					r=mid;
 			}
-			mid=(l+r)/2; 
-		} 
-		return l; 
+			mid=(l+r)/2;
+		}
+		return l;
 	}
-	
+
 	public static void main(String args[])
 	{
 		int[] a = {2, 1, 0};

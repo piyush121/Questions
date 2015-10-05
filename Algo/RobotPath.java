@@ -2,7 +2,7 @@ class RobotPath
 {
 	private static int X_AXIS = 2;
 	private static int Y_AXIS = 2;
-	
+
 	public static void main(String args[])
 	{
 		findPath(0,0,"");
@@ -11,7 +11,7 @@ class RobotPath
 	public static void findPath(int x, int y, String path)
 	{
 		if(X_AXIS<=x && Y_AXIS<=y)
-		{	
+		{
 			System.out.println(path);
 			return;
 		}

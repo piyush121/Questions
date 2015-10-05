@@ -3,7 +3,7 @@ import java.util.Stack;
 class SortStack
 {
 	private static Stack<Integer> stack = new Stack<Integer>();
-	
+
 	public static void main(String args[])
 	{
 		stack.push(10);
@@ -14,7 +14,7 @@ class SortStack
 		System.out.println(stack);
 		sortStack();
 	}
-	
+
 	public static void sortStack()
 	{
 		Stack<Integer> tempStack = new Stack<Integer>();

@@ -7,7 +7,7 @@ class RatMaze
 
 	public RatMaze()
 	{
-		maze =  new int[][]{ 
+		maze =  new int[][]{
 					{1, 0, 0, 0},
         			{1, 1, 0, 1},
         			{0, 1, 0, 0},
@@ -45,7 +45,7 @@ class RatMaze
 	}
 
 	public boolean isSafe(int x, int y)
-	{	
+	{
 		if(x >=0 && x<N && y>=0 && y<N && maze[x][y]!=0)
 			return true;
 		return false;

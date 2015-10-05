@@ -4,7 +4,7 @@ class PairWithGivenDifference
 	{
 		int i=0;
 		int j=0;
-		
+
 		while(i<a.length && j<a.length)
 		{
 			if(i!=j && a[j]-a[i]==diff)
@@ -24,7 +24,7 @@ class PairWithGivenDifference
 		System.out.println("No such Pair");
 		return false;
 	}
-	
+
 	public static void main(String args[])
 	{
 		PairWithGivenDifference p = new PairWithGivenDifference();

@@ -41,7 +41,7 @@ class PlusOne
 		}
 		return b;
 	}
-	
+
 	public static void main(String args[])
 	{
 		PlusOne p = new PlusOne();
@@ -61,7 +61,7 @@ public int[] plusOne(int[] digits) {
                 break;
             } else {
                 digits[i] = digit % 10;
-            } 
+            }
             if(i == 0){
                 int[] oldDigits = digits;
                 digits = new int[digits.length + 1];

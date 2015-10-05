@@ -5,7 +5,7 @@ class AdjacencyList
 	static List<List<Integer>> adj;
 	List<List<Integer>> tp = new ArrayList<List<Integer>>();
 	int vertices;
-	
+
 	AdjacencyList(int vertices)
 	{
 		this.vertices = vertices;
@@ -16,7 +16,7 @@ class AdjacencyList
 		}
 		System.out.println(adj);
 	}
-	
+
 	public void createList()
 	{
 		int count = 1;
@@ -27,10 +27,10 @@ class AdjacencyList
 				adj.get(i).add(count++);
 			}
 		}
-		
+
 		System.out.println(adj);
 	}
-	
+
 	public void transpose(List<List<Integer>> adj)
 	{
 		for(int i=0;i<adj.size();i++)
@@ -46,7 +46,7 @@ class AdjacencyList
 		}
 		System.out.println(tp);
 	}
-	
+
 	public static void main(String args[])
 	{
 		AdjacencyList a = new AdjacencyList(6);

@@ -17,7 +17,7 @@ class Square //using bitmanipulation without using */
 			return (square(x)<<2);
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		Square s = new Square();

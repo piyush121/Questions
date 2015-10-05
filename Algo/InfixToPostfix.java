@@ -3,7 +3,7 @@ import java.util.HashMap;
 class InfixToPostfix
 {
 	HashMap<String, Integer> precedenceMap;
-	Stack<String> opStack; 
+	Stack<String> opStack;
 	public InfixToPostfix()
 	{
 		precedenceMap = new HashMap<String, Integer>();
@@ -12,9 +12,9 @@ class InfixToPostfix
 		precedenceMap.put("+", 1);
 		precedenceMap.put("-", 1);
 		opStack = new Stack<String>();
-		
+
 	}
-	
+
 	public String infixToPostFix(String exp)
 	{
 		StringBuilder sb = new StringBuilder();
@@ -24,7 +24,7 @@ class InfixToPostfix
 			{
 				if(opStack.isEmpty())
 					opStack.push(exp.charAt(i)+"");
-				else 
+				else
 				{
 					while(!opStack.isEmpty() && precedenceMap.get(opStack.peek())>precedenceMap.get(exp.charAt(i)+""))
 					{
@@ -43,7 +43,7 @@ class InfixToPostfix
 			sb.append(opStack.pop());
 		return sb.toString();
 	}
-	
+
 	public static void main(String args[])
 	{
 		InfixToPostfix i = new InfixToPostfix();

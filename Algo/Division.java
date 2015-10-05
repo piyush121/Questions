@@ -10,7 +10,7 @@ class Division
 		}
 		return quotient;
 	}
-	
+
 	public int efficientDivide(int dividend, int divisor)
 	{
 		int quotient = 0;
@@ -25,7 +25,7 @@ class Division
 				currDivisor <<=1;
 				currQuotient <<=1;
 			}
-			else 
+			else
 			{
 				currDivisor >>>=1;
 				currQuotient >>>=1;
@@ -33,7 +33,7 @@ class Division
 		}
 		return quotient;
 	}
-	
+
 	public static void main(String args[])
 	{
 		Division d = new Division();

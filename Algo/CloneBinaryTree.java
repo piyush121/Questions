@@ -9,7 +9,7 @@ public class CloneBinaryTree
 		clonedRoot.right = clone(root.right);
 		return clonedRoot;
 	}
-	
+
 	public static void main(String args[])
 	{
 		CloneBinaryTree c = new CloneBinaryTree();

@@ -12,7 +12,7 @@ class IntegerMultiplication
 		}
 		return sum;
 	}
-	
+
 	public static void main(String arg[])
 	{
 		System.out.println(IntegerMultiplication.multiply(11,13));

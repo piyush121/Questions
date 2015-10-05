@@ -2,13 +2,13 @@ import java.util.List;
 import java.util.ArrayList;
 public class InOrderTraversal
 {
-	public List<Integer> inorderTraversal(TreeNode root) 
+	public List<Integer> inorderTraversal(TreeNode root)
 	{
 		TreeNode node = root;
 		ArrayList<Integer> l = new ArrayList<Integer>();
 		return helper(node, l);
     }
-	
+
 	public List<Integer> helper(TreeNode node, List<Integer> l)
 	{
 		if(node==null)
@@ -21,14 +21,14 @@ public class InOrderTraversal
 			helper(node.right, l);
 		return l;
 	}
-	
+
 	public int size(TreeNode node)
 	{
 		if(node==null)
 			return 0;
 		return size(node.left) + 1 + size(node.right);
 	}
-	
+
 	public static void main(String args[])
 	{
 		TreeNode root = new TreeNode(1);
@@ -42,14 +42,14 @@ public class InOrderTraversal
 	}
 }
 
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

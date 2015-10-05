@@ -2,13 +2,13 @@ import java.util.List;
 import java.util.ArrayList;
 public class SortedArrayToBST
 {
-	public TreeNode sortedArrayToBST(int[] num) 
+	public TreeNode sortedArrayToBST(int[] num)
 	{
 		if(num.length==0)
 			return null;
 		return helper(num, 0, num.length-1);
     }
-	
+
 	public TreeNode helper(int[] num, int lo, int hi)
 	{
 		//System.out.println("lo: "+lo+" hi: "+hi);
@@ -20,16 +20,16 @@ public class SortedArrayToBST
 		root.right = helper(num, mid+1, hi);
 		return root;
 	}
-	
-	
-	
-	public List<Integer> inorderTraversal(TreeNode root) 
+
+
+
+	public List<Integer> inorderTraversal(TreeNode root)
 	{
 		TreeNode node = root;
 		ArrayList<Integer> l = new ArrayList<Integer>();
 		return helper(node, l);
     }
-	
+
 	public List<Integer> helper(TreeNode node, List<Integer> l)
 	{
 		if(node==null)
@@ -42,7 +42,7 @@ public class SortedArrayToBST
 			helper(node.right, l);
 		return l;
 	}
-	
+
 	public static void main(String args[])
 	{
 		SortedArrayToBST s = new SortedArrayToBST();

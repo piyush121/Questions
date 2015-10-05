@@ -8,7 +8,7 @@ class UniqueBinarySearchTrees
 		System.out.println(solution.numTrees(4));
 	}
 
-	public int numTrees(int n) 
+	public int numTrees(int n)
 	{
 		if(n<=0)
 			return 1;

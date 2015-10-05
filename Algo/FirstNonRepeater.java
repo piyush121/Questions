@@ -26,7 +26,7 @@ public class FirstNonRepeater
 		}
 		System.out.println(s.charAt(index));
 	}
-	
+
 	public static void main(String args[])
 	{
 		FirstNonRepeater f = new FirstNonRepeater();
@@ -38,16 +38,15 @@ class Stat
 {
 	int count;
 	int index;
-	
+
 	Stat(int count, int index)
 	{
 		this.count = count;
 		this.index = index;
 	}
-	
+
 	public void incrementCount()
 	{
 		this.count++;
 	}
 }
-

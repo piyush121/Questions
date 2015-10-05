@@ -5,7 +5,7 @@ public class ShortenedForgottenLines {
     private static String fileLocation = new String();
     public static void main(String[] args) throws IOException {
         // Set file location
-        fileLocation = "macbeth.txt";   
+        fileLocation = "macbeth.txt";
         String fullString = new String(Files.readAllBytes(Paths.get(fileLocation)));
         String[] lineBlocks = fullString.split("\r\n\r\n");
         String[] partialLines = new String[2];
@@ -17,6 +17,6 @@ public class ShortenedForgottenLines {
                 if(block.contains(partial))
                     System.out.println(block);
             }
-        }   
+        }
     }
 }

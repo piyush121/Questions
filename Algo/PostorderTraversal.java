@@ -2,8 +2,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Stack;
 public class PostorderTraversal
-{	
-	public List<Integer> postorderTraversal(TreeNode root) 
+{
+	public List<Integer> postorderTraversal(TreeNode root)
 	{
 		List<Integer> l = new ArrayList<Integer>();
 		if(root==null)
@@ -27,7 +27,7 @@ public class PostorderTraversal
 		}
 		return l;
     }
-	
+
 	public static void main(String args[])
 	{
 		PostorderTraversal p = new PostorderTraversal();

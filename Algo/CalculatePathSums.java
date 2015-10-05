@@ -1,6 +1,6 @@
 public class CalculatePathSums
 {
-	public static void main(String s[]) 
+	public static void main(String s[])
 	{
 		Node root = new Node(6);
 		Node l11 = new Node(3);
@@ -20,7 +20,7 @@ public class CalculatePathSums
 		int sum = findSum(root, 0);
 		System.out.println(sum);
 	}
-	
+
 	public static int breadFirstSearch(Node root, int sum)
 	{
 		if(root.right == null && root.left=null)
@@ -39,12 +39,12 @@ public class CalculatePathSums
 		}
 		return sum;
 	}
-	
+
 	static int findSum(Node root, int sum)
 	{
 		if(root.right == null && root.left == null)
 			sum = sum + root.data;
-		
+
 		if(root.right != null) {
 			root.right.data = root.data*10 + root.right.data;
 			sum = findSum(root.right, sum);
@@ -53,18 +53,18 @@ public class CalculatePathSums
 			root.left.data = root.data*10 + root.left.data;
 			sum = findSum(root.left, sum);
 		}
-		
+
 		return sum;
 	}
 }
 
-class Node 
+class Node
 {
 	int data;
 	Node right;
 	Node left;
-	
-	Node(int data) 
+
+	Node(int data)
 	{
 		this.data = data;
 		this.right = null;
@@ -76,7 +76,7 @@ class Pair
 {
 	Node node;
 	String str;
-	
+
 	Pair(Node node, String str)
 	{
 		this.node = node;

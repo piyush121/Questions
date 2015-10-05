@@ -1,6 +1,6 @@
 public class MatrixSearch
 {
-	public boolean searchMatrix(int[][] matrix, int target) 
+	public boolean searchMatrix(int[][] matrix, int target)
 	{
 		if(matrix==null)
 		{
@@ -19,7 +19,7 @@ public class MatrixSearch
 		}
 		return false;
     }
-	
+
 	public boolean binarySearch(int[] row, int lo, int hi, int target)
 	{
 		int mid = lo +(hi-lo)/2;
@@ -38,7 +38,7 @@ public class MatrixSearch
 		}
 		return false;
 	}
-	
+
 	public static void main(String args[])
 	{
 		int[][] matrix = {
@@ -52,4 +52,3 @@ public class MatrixSearch
 		System.out.println(System.currentTimeMillis()-start);
 	}
 }
-
