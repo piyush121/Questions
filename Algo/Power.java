@@ -13,7 +13,7 @@ class Power
             return x*pow(x, n-1);
         }
 	}
-	
+
 	public static void main(String args[])
 	{
 		Power p = new Power();
@@ -22,4 +22,3 @@ class Power
 		System.out.println(1.0==1/1.0000);
 	}
 }
-

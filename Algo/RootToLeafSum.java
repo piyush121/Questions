@@ -1,10 +1,10 @@
 public class RootToLeafSum
 {
-	public int sumNumbers(TreeNode root) 
+	public int sumNumbers(TreeNode root)
 	{
         return helper(root, 0);
     }
-	
+
 	public int helper(TreeNode root, int sum)
 	{
 		if(root==null)
@@ -29,7 +29,7 @@ public class RootToLeafSum
 		}
 		return sum;
 	}
-	
+
 	public static void main(String args[])
 	{
 		TreeNode root = new TreeNode(1);
@@ -51,13 +51,13 @@ public class RootToLeafSum
 	}
 }
 
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 	}
 }

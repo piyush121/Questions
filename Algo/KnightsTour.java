@@ -4,7 +4,7 @@ class KnightsTour
 {
 	private static final int size = 8;
 
-	
+
 
 	public static void main(String args[])
 	{

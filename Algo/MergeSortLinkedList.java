@@ -4,7 +4,7 @@ public class MergeSortLinkedList
 	{
 		return helperDivide(head);
 	}
-	
+
 	public LinkNode helperDivide(LinkNode head)
 	{
 		if(head == null || head.next==null)
@@ -25,14 +25,14 @@ public class MergeSortLinkedList
 				q = q.next;
 			}
 			r = p;
-			p = p.next;	
+			p = p.next;
 		}
 		r.next = null;
 		LinkNode left = helperDivide(head);
 		LinkNode right = helperDivide(p);
 		return helperMerge(left, right);
 	}
-	
+
 	public LinkNode helperMerge(LinkNode a, LinkNode b)
 	{
 		LinkNode p = a;
@@ -76,7 +76,7 @@ public class MergeSortLinkedList
 		}
 		return head.next;
 	}
-	
+
 	public LinkNode removeDuplicates(LinkNode head)
 	{
 		if(head==null || head.next==null)
@@ -87,7 +87,7 @@ public class MergeSortLinkedList
 		{
 			if(prev!=null)
 			{
-				
+
 				if(curr.val==prev.val)
 				{
 					curr = curr.next;
@@ -108,7 +108,7 @@ public class MergeSortLinkedList
 		}
 		return head;
 	}
-	
+
 	public static void main(String args[])
 	{
 		MergeSortLinkedList m = new MergeSortLinkedList();

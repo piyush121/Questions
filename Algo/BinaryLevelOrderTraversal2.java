@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Stack;
 public class BinaryLevelOrderTraversal2
 {
-	public List<List<Integer>> levelOrderBottom(TreeNode root) 
+	public List<List<Integer>> levelOrderBottom(TreeNode root)
     {
         TreeNode node = root;
 		ArrayList<List<Integer>> list = new ArrayList<List<Integer>>();
@@ -39,7 +39,7 @@ public class BinaryLevelOrderTraversal2
 		}
 		return list;
     }
-	
+
 	public static void main(String args[])
 	{
 		BinaryLevelOrderTraversal2 b = new BinaryLevelOrderTraversal2();
@@ -64,15 +64,15 @@ public class BinaryLevelOrderTraversal2
 		System.out.println(b.levelOrderBottom(root));
 	}
 }
-			
-class TreeNode 
+
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

@@ -8,14 +8,14 @@ public class GenerateParentheses
 	{
 		set = new HashSet<String>();
 	}
-	public List<String> generateParenthesis(int n) 
+	public List<String> generateParenthesis(int n)
 	{
 		List<String> list = new ArrayList<String>();
 		if(n==0)
 			return list;
 		return helper(n, 0, 0, "", list);
     }
-	
+
 	public List<String> helper(int n, int left, int right, String p, List<String> list)
 	{
 		if(left==n && right==n)
@@ -32,7 +32,7 @@ public class GenerateParentheses
 			helper(n, left, right+1, p+")", list);
 		return list;
 	}
-	
+
 	public static void main(String args[])
 	{
 		GenerateParentheses gp = new GenerateParentheses();

@@ -13,10 +13,10 @@ public class ReverseLinkedList
 			prev = curr;
 			curr = next;
 		}
-		
+
 		return prev;
 	}
-	
+
 	public LinkNode recursive(LinkNode prev, LinkNode curr, LinkNode next)
 	{
 		if(curr==null)
@@ -25,9 +25,9 @@ public class ReverseLinkedList
 		curr.next = prev;
 		prev = curr;
 		curr = next;
-		return recursive(prev, curr, next);	
+		return recursive(prev, curr, next);
 	}
-	
+
 	public void recursive2(LinkNode head)
 	{
 		if(head==null)
@@ -43,7 +43,7 @@ public class ReverseLinkedList
 		if(p==null)
 			p = rest;
 	}
-	
+
 	public static void main(String args[])
 	{
 		LinkNode head = new LinkNode(1);
@@ -56,7 +56,7 @@ public class ReverseLinkedList
 		r.recursive2(head);
 		r.printLinkedList(p);
 	}
-	
+
 	public void printLinkedList(LinkNode head)
 	{
 		while(head!=null)
@@ -71,9 +71,9 @@ class LinkNode
 {
 	LinkNode next;
 	int val;
-	
+
 	public LinkNode(int val)
-	{	
+	{
 		this.val = val;
 		this.next = null;
 	}

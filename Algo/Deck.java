@@ -3,7 +3,7 @@ public class Deck
 {
 	private Card[] deckOfCards = new Card[52];
 	private static int currentCard;
-	
+
 	public Deck()
 	{
 		int i=0;
@@ -16,7 +16,7 @@ public class Deck
 		}
 		currentCard =0;
 	}
-	
+
 	public void shuffle()
 	{
 		Random r = new Random();
@@ -29,7 +29,7 @@ public class Deck
 		}
 		currentCard = 0;
 	}
-	
+
 	public Card deal()
 	{
 		if(currentCard<52)
@@ -41,7 +41,7 @@ public class Deck
 			return null;
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		Deck d = new Deck();
@@ -60,28 +60,28 @@ class Card
 	public final static int JOKER=-1;
 	public final int suit;
 	public final int rank;
-	
+
 	public Card(int suit, int rank)
 	{
 		this.suit = suit;
 		this.rank = rank;
 	}
-	
+
 	public int getSuit()
 	{
 		return this.suit;
 	}
-	
+
 	public int getRank()
 	{
 		return this.rank;
 	}
-	
+
 	public String toString()
 	{
 		return getSuitAsString()+getRankAsString();
 	}
-	
+
 	public String getSuitAsString()
 	{
 		switch(this.suit)
@@ -93,7 +93,7 @@ class Card
 			default: return "JOKER";
 		}
 	}
-	
+
 	public String getRankAsString()
 	{
 		switch(this.rank)
@@ -115,4 +115,3 @@ class Card
 		}
 	}
 }
-

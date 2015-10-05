@@ -1,12 +1,12 @@
 import java.util.*;
 
 class Fish {
-	
+
 	  public int solution1(int[] A, int[] B) {
        Stack<Integer> st = new Stack<Integer>();
         int count=0;
         for(int i=0;i<A.length;i++){
-        	
+
         	if(st.empty() && B[i]==0){continue;};
         	if(B[i]==1){
         		st.push(i);
@@ -18,7 +18,7 @@ class Fish {
         	}else{
         		st.pop();
         		count++;
-        		
+
         		boolean stop = false;
         		while(!stop && !st.empty()){
         			if(A[st.peek()] < A[i]){
@@ -76,11 +76,11 @@ class Fish {
             else
             {
                 stack.push(i);
-            }   
+            }
         }
         return stack.size();
     }
-	
+
 	public static void main(String args[])
 	{
 		Fish fish = new Fish();

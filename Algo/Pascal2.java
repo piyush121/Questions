@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 class Pascal2
 {
-	public List<Integer> getRow(int rowIndex) 
+	public List<Integer> getRow(int rowIndex)
 	{
          ArrayList<Integer> l = new ArrayList<Integer>();
 		if(rowIndex<0)
@@ -33,9 +33,9 @@ class Pascal2
 			l.add(1);
 			temp = l;
 		}
-		return l; 
+		return l;
     }
-	
+
 	public static void main(String args[])
 	{
 		Pascal2 p = new Pascal2();

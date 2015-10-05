@@ -16,7 +16,7 @@ class WordLadder
 		dict.add(end);
 		System.out.println(wl.check(start, end, dict));
 	}
-	
+
 	public int check(String start, String end, HashSet<String> dict)
 	{
 		ArrayDeque<String> wordQueue = new ArrayDeque<String>();
@@ -46,10 +46,10 @@ class WordLadder
 					{
 						continue;
 					}
-				
+
 					arr[i] = c;
 					String temp = new String(arr);
-					
+
 					if(dict.contains(temp))
 					{
 						wordQueue.add(temp);

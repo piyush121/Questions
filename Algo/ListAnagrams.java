@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Set;
 class ListAnagrams
 {
-	public List<String> anagrams(String[] strs) 
+	public List<String> anagrams(String[] strs)
 	{
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
 		ArrayList<String> p = new ArrayList<String>();
@@ -40,7 +40,7 @@ class ListAnagrams
 		}
 		return p;
     }
-	
+
 	public static void main(String args[])
 	{
 		ListAnagrams la = new ListAnagrams();

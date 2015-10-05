@@ -10,23 +10,23 @@ class MapColoring
 {
 	private static final int COUNTRIES=7;
 	private int[][] map;
-	private Color[] countryColor; 
+	private Color[] countryColor;
 
-	public enum Color 
+	public enum Color
 	{
 		NONE(0), RED(1), YELLOW(2), GREEN(3), BLUE(4);
 		public final int value;
-		
+
 		private Color(final int value)
 		{
 			this.value = value;
 		}
 
-		public static Color getName(int value) 
+		public static Color getName(int value)
 		{
-  			for(Color c: Color.values()) 
+  			for(Color c: Color.values())
   			{
-    			if(c.value == value) 
+    			if(c.value == value)
     			{
       				return c;
     			}
@@ -39,11 +39,11 @@ class MapColoring
 	{
 		map = new int[COUNTRIES][];
     	map[0] = new int[] { 1, 4, 2, 5 };
-    	map[1] = new int[] { 0, 4, 6, 5 }; 
-    	map[2] = new int[] { 0, 4, 3, 6, 5 }; 
-    	map[3] = new int[] { 2, 4, 6 }; 
-    	map[4] = new int[] { 0, 1, 6, 3, 2 }; 
-    	map[5] = new int[] { 2, 6, 1, 0 }; 
+    	map[1] = new int[] { 0, 4, 6, 5 };
+    	map[2] = new int[] { 0, 4, 3, 6, 5 };
+    	map[3] = new int[] { 2, 4, 6 };
+    	map[4] = new int[] { 0, 1, 6, 3, 2 };
+    	map[5] = new int[] { 2, 6, 1, 0 };
     	map[6] = new int[] { 2, 3, 4, 1, 5 };
 
     	countryColor = new Color[COUNTRIES];

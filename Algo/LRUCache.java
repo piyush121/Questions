@@ -7,14 +7,14 @@ class LRUCache
 	ArrayList<Integer> list;
 	HashMap<Integer, Integer> map;
 	int capacity = 0;
-	public LRUCache(int capacity) 
+	public LRUCache(int capacity)
 	{
         this.list = new ArrayyList<Integer>();
 		this.map = new HashMap<Integer, Integer>();
 		this.capacity = capacity;
     }
-    
-    public int get(int key) 
+
+    public int get(int key)
 	{
         if(!map.containsKey(key))
 		{
@@ -24,8 +24,8 @@ class LRUCache
 		list.add(key);
 		return map.get(key);
     }
-    
-    public void set(int key, int value) 
+
+    public void set(int key, int value)
 	{
 		if(map.containsKey(key))
 		{
@@ -43,7 +43,7 @@ class LRUCache
 		    list.add(key);
 		}
     }
-	
+
 	public static void main(String args[])
 	{
 		LRUCache lc = new LRUCache(2);

@@ -13,7 +13,7 @@ class HammingWeight
 		}
 		return count;
 	}
-	
+
 	public static void main(String args[])
 	{
 		HammingWeight hw = new HammingWeight();

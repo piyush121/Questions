@@ -12,7 +12,7 @@ class PancakeSort
 	{
 		int s = startIndex;
 		int e = endIndex;
-		
+
 		while(s<e)
 		{
 			int temp = a[s];
@@ -22,7 +22,7 @@ class PancakeSort
 			e--;
 		}
 	}
-	
+
 	public static void pancakeSort()
 	{
 		for(int i = a.length-1;i>=0;i--)
@@ -38,8 +38,8 @@ class PancakeSort
 			printArray();
 		}
 	}
-	
-	public static int findMaxIndex(int startIndex, int endIndex) 
+
+	public static int findMaxIndex(int startIndex, int endIndex)
 	{
 		int max = Integer.MIN_VALUE;
 		int index = -1;
@@ -53,12 +53,12 @@ class PancakeSort
 		}
 		return index;
 	}
-	
+
 	public static void main(String args[])
 	{
 		pancakeSort();
 	}
-	
+
 	public static void printArray()
 	{
 		for(int num: a)

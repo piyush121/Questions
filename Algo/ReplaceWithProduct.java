@@ -11,11 +11,11 @@ class ReplaceWithProduct
 			else
 				zeroCount++;
 		}
-		
+
 		for(int i=0;i<a.length;i++)
 		{
 			if(a[i]!=0 && zeroCount==0)
-			{	
+			{
 				a[i] = (int) p/a[i];
 			}
 			else if(a[i]!=0 && zeroCount!=0)

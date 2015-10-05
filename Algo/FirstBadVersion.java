@@ -1,7 +1,7 @@
 /* https://leetcode.com/problems/first-bad-version/ */
 class FirstBadVersion
 {
-	public int firstBadVersion(int n) 
+	public int firstBadVersion(int n)
 	{
     	int lo = 0;
     	int hi = n-1;

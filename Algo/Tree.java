@@ -4,12 +4,12 @@ class Tree
 	int value;
 	Tree left;
 	Tree right;
-	
+
 	Tree(int value)
-	{	
+	{
 		this.value = value;
 	}
-	
+
 	public Tree createTreeFromArray(int[] arr, int low, int high)
 	{
 		if(low>high)
@@ -20,7 +20,7 @@ class Tree
 		root.right = createTreeFromSortedArray(arr, mid+1, high);
 		return root;
 	}
-	
+
 	public void breadFirstSearch(Tree root)
 	{
 		Tree p = root;
@@ -47,12 +47,12 @@ class Tree
 			}
 		}
 	}
-	
+
 	public void depthFirstSearch(Tree root)
 	{
 		System.out.println();
 		Tree p = root;
-		
+
 		if(p==null)
 		{
 			return;
@@ -76,7 +76,7 @@ class Tree
 
 		}
 	}
-	
+
 	public void toLinkedList(Tree root)
 	{
 		Stack<Tree> stack = new Stack<Tree>();
@@ -100,7 +100,7 @@ class Tree
 			p = p.right;
 		}
 	}
-	
+
 	public static void main(String arg[])
 	{
 		Tree t = new Tree(0);

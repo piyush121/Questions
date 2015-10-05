@@ -6,7 +6,7 @@ class Peak
 		int[] arr = {1,2,3,4,1};
 		System.out.println(p.findPeak(arr));
 	}
-	
+
 	public int findPeak(int[] arr)
 	{
 		int max = arr[0];

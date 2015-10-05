@@ -17,7 +17,7 @@ class PushZerosToTheEnd
 			System.out.print(x+" ");
 		System.out.println("count: "+count);
 	}
-	
+
 	public static void main(String args[])
 	{
 		PushZerosToTheEnd p = new PushZerosToTheEnd();

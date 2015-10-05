@@ -11,7 +11,7 @@ class SingleNumberIII
     {
         int xor = 0;
         for (int num : nums)
-        	xor ^= num;	
+        	xor ^= num;
         xor = Integer.highestOneBit(xor);
 
         //dividing the nums array into two groups one with highest one bit set and other with unset

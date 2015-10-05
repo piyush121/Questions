@@ -1,6 +1,6 @@
 class CheckPalindrome
 {
-	public boolean isPalindrome(String s) 
+	public boolean isPalindrome(String s)
     {
         if(s==null)
 			return false;
@@ -25,14 +25,14 @@ class CheckPalindrome
 					hi--;
 				}
 				else
-				{	
+				{
 					return false;
 				}
 			}
-		}		
+		}
 		return true;
     }
-	
+
 	public static void main(String args[])
 	{
 		CheckPalindrome v = new CheckPalindrome();

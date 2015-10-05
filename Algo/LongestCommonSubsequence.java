@@ -10,7 +10,7 @@ class LongestCommonSubsequence
 		System.out.println(set);
 		System.out.println(max +" "+sub);
 	}
-	
+
 	public void helper(String s, String t, String p)
 	{
 		if(s.length()==0 || t.length()==0)
@@ -43,7 +43,7 @@ class LongestCommonSubsequence
 			}
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		LongestCommonSubsequence l = new LongestCommonSubsequence();

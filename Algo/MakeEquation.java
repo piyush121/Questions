@@ -7,9 +7,9 @@ class MakeEquation
 			case "+": return a+b;
 			case "-": return a-b;
 		}
-		return -1;	
+		return -1;
 	}
-	
+
 	public boolean isValid(int exp, int target)
 	{
 		if(exp<=target)
@@ -17,12 +17,12 @@ class MakeEquation
 		else
 			return false;
 	}
-	
+
 	public void makeEquation(int[] a, int target)
 	{
 		helper(a, target, a[0], ""+a[0], 1);
 	}
-	
+
 	public void helper(int[] a, int target, int sum, String s, int index)
 	{
 		System.out.println("s: "+s+" index: "+index + " sum: "+sum);
@@ -37,7 +37,7 @@ class MakeEquation
 			}
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		int[] a ={1, 2, 3, 4, 5};

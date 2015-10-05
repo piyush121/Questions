@@ -11,7 +11,7 @@ class BinaryPalindromes
 				System.out.println(s);
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		BinaryPalindromes b = new BinaryPalindromes();

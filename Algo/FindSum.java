@@ -5,7 +5,7 @@ class FindSum
 		int[] a = {-1, 100,0, 98,1};
 		System.out.print(findIndex(a));
 	}
-	
+
 	public static int findIndex(int[] a)
 	{
 		int sum = 0;

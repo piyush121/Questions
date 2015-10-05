@@ -25,7 +25,7 @@ class NQueens
 		if(isSafeRow(x, y)  && isSafeUpperDiagonal(x, y) && isSafeLowerDiagonal(x, y))
 			return true;
 		return false;
-	}	
+	}
 
 	private boolean isSafeRow(int r, int c)
 	{

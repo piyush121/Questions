@@ -1,6 +1,6 @@
 public class DeleteDuplicatesFromList
 {
-	public ListNode deleteDuplicates(ListNode head) 
+	public ListNode deleteDuplicates(ListNode head)
 	{
         if(head==null || head.next==null)
 			return head;
@@ -25,7 +25,7 @@ public class DeleteDuplicatesFromList
 		}
 		return head;
     }
-	
+
 	public void printLinkedList(ListNode head)
 	{
 		ListNode node = head;
@@ -35,7 +35,7 @@ public class DeleteDuplicatesFromList
 			node = node.next;
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		DeleteDuplicatesFromList d = new DeleteDuplicatesFromList();
@@ -48,11 +48,11 @@ public class DeleteDuplicatesFromList
 	}
 }
 
-class ListNode 
+class ListNode
 {
     int val;
     ListNode next;
-    ListNode(int x) 
+    ListNode(int x)
 	{
         val = x;
         next = null;

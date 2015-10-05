@@ -5,13 +5,13 @@ public class ListPermutation
 {
 	List<List<Integer>> a = new ArrayList<List<Integer>>();
 	HashSet<List<Integer>> set = new HashSet<List<Integer>>();
-	public List<List<Integer>> permute(int[] num) 
-	{	
+	public List<List<Integer>> permute(int[] num)
+	{
 		if(num==null)
 			return a;
 		return helper()
     }
-	
+
 	public List<List<Integer>> helper(int[] num,  ArrayList<Integer> b, int[] c);
 	{
 		if(b.size()==num.length)

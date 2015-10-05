@@ -20,7 +20,7 @@ class SquareRoot
 		}
 		return mid;
 	}
-	
+
 	public static void main(String args[])
 	{
 		System.out.println(SquareRoot.findSquareRoot(5));

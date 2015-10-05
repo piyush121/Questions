@@ -3,7 +3,7 @@ class OddNumber //using Bit manipulation
 	public boolean isOdd(int num)
 	{
 		if((num&1)==1)
-		{	
+		{
 			return true;
 		}
 		else
@@ -11,7 +11,7 @@ class OddNumber //using Bit manipulation
 			return false;
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		OddNumber o = new OddNumber();

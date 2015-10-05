@@ -5,9 +5,9 @@ public class BinaryTreeDiameter
 	{
 		if(root==null)
 			return 0;
-		return 1 + Math.max(height(root.left), height(root.right)); 
+		return 1 + Math.max(height(root.left), height(root.right));
 	}
-	
+
 	public int diameter(TreeNode root)
 	{
 		if(root==null)
@@ -21,7 +21,7 @@ public class BinaryTreeDiameter
 		}
 		return max-1;
 	}
-	
+
 	public static void main(String args[])
 	{
 		BinaryTreeDiameter b = new BinaryTreeDiameter();
@@ -40,12 +40,12 @@ public class BinaryTreeDiameter
 	}
 }
 
-class TreeNode 
+class TreeNode
 {
 	TreeNode left;
 	TreeNode right;
 	int val;
-	
+
 	TreeNode(int val)
 	{
 		this.val = val;

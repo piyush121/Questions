@@ -4,7 +4,7 @@ class WeightedQuickUnion
 	private static int[] id;
 	private static int[] size;
 	private int N;
-	
+
 	WeightedQuickUnion(int N)
 	{
 		this.N = N;
@@ -16,7 +16,7 @@ class WeightedQuickUnion
 			sz[i] = 1;
 		}
 	}
-	
+
 	private int root(int p)
 	{
 		while(id[i]!=i)
@@ -25,12 +25,12 @@ class WeightedQuickUnion
 		}
 		return i;
 	}
-	
+
 	public boolean find(int p, int q)
 	{
-		return root(p) == root(q); 
+		return root(p) == root(q);
 	}
-	
+
 	public void union(int p, int q)
 	{
 		int i = root(p);

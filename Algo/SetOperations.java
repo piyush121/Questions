@@ -6,7 +6,7 @@ class SetOperations
 		int m = 0;
 		int n =	0;
 		ArrayList<Integer> union = new ArrayList<Integer>();
-		
+
 		while(m<a.length && n<b.length)
 		{
 			if(a[m]<b[n])
@@ -38,7 +38,7 @@ class SetOperations
 		}
 		System.out.println(union);
 	}
-	
+
 	public void intersection(int[] a, int[] b)
 	{
 		int m = 0;
@@ -46,7 +46,7 @@ class SetOperations
 		ArrayList<Integer> intersection = new ArrayList<Integer>();
 		while(m <a.length&& n<b.length)
 		{
-			if(a[m]<b[n])	
+			if(a[m]<b[n])
 				m++;
 			else if(b[n]<a[m])
 				n++;
@@ -59,7 +59,7 @@ class SetOperations
 		}
 		System.out.println(intersection);
 	}
-	
+
 	public static void main(String args[])
 	{
 		int arr1[] = {1, 2, 4, 5, 6};

@@ -9,7 +9,7 @@ class ValidParentheses
 		System.out.println(vp.checkParentheses(check1));
 		System.out.println(vp.checkParentheses(check2));
  	}
-	
+
 	public boolean checkParentheses(String checkStr)
 	{
 		Stack<Character> stack = new Stack<Character>();
@@ -21,7 +21,7 @@ class ValidParentheses
 		for(int i=0;i<arr.length;i++)
 		{
 			if(map.containsKey(arr[i]))
-			{	
+			{
 				stack.push(arr[i]);
 			}
 			else

@@ -26,12 +26,12 @@ class Sequence
             }
         }
         System.out.print(index+" ");
-        for(int i=0;i<count;i++) 
+        for(int i=0;i<count;i++)
         {
             System.out.print(a[index+i]+" ");
-        } 
+        }
     }
-	
+
 	public static void main(String args[])
 	{
 		int[] a = {1,4,5,6,9, 10};
@@ -41,4 +41,4 @@ class Sequence
 		Sequence.findSequence(b);
 		Sequence.findSequence(c);
 	}
-} 
+}

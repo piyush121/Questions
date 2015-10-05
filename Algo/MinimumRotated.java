@@ -17,19 +17,19 @@ class MinimumRotated
 	{
 		return helper(nums, 0, nums.length-1);
 	}
-	
+
 	public int helper(int[] arr, int low, int high)
 	{
 		if(low==high)
 		{
 			return arr[high];
 		}
-		
+
 		if(Math.abs(low-high) == 1)
 		{
 			return Math.min(arr[low], arr[high]);
 		}
-		
+
 		int mid = low + (high-low)/2;
 		if (arr[low]<arr[high])
 		{

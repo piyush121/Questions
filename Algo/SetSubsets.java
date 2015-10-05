@@ -10,7 +10,7 @@ class SetSubsets
 		set.add(4);
 		findSubsets(set);
 	}
-	
+
 	public static void findSubsets(ArrayList<Integer> set)
 	{
 		ArrayList<ArrayList<Integer>> allSubsets = new ArrayList<ArrayList<Integer>>();
@@ -20,7 +20,7 @@ class SetSubsets
 			int temp = numSubsets;
 			ArrayList<Integer> subsets = new ArrayList<Integer>();
 			for(int i=0;i<set.size();i++)
-			{ 
+			{
 				if((temp & 1)==1)
 					subsets.add(set.get(i));
 				temp >>= 1;

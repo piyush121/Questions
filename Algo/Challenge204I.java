@@ -12,7 +12,7 @@ class Challenge204I
 		//System.out.println(count);
 		find(target, 0, count,0, "");
 	}
-	
+
 	public static void find(int target, int num,int count,int n, String s)
 	{
 		//System.out.println(count+" "+n);
@@ -21,7 +21,7 @@ class Challenge204I
 			return;
 		}
 		if(count == -1)
-		{	
+		{
 			if(target==num)
 				System.out.println(s);
 			return;
@@ -30,7 +30,7 @@ class Challenge204I
 		find(target, num + 1*(int)Math.pow(2,n),count-1, n+1 ,"1"+s);
 		find(target, num + 2*(int)Math.pow(2,n),count-1, n+1, "2"+s);
 	}
-	
+
 	public static void main(String args[])
 	{
 		Challenge204I.printHyperBinary(18);

@@ -4,7 +4,7 @@ class BinaryTree
 	private BinaryTree left;
 	private BinaryTree right;
 	private int value;
-	
+
 	public BinaryTree(int value)
 	{
 		this.value = value;
@@ -22,8 +22,8 @@ class BinaryTree
 		root.right = constructBinaryTree(a, mid+1, hi);
 		return root;
 	}
-	
-	
+
+
 	public static void breadthFirstSearch(BinaryTree root)
 	{
 		if(root == null)
@@ -48,7 +48,7 @@ class BinaryTree
 			next = new LinkedList<BinaryTree>();
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		int a[] = {1, 2,3, 4, 5, 6, 7, 8, 9, 10};
@@ -56,7 +56,7 @@ class BinaryTree
 		BinaryTree.breadthFirstSearch1(b);
 		//System.out.println(BinaryTree.findLCA(b, 2,5).value);
 	}
-	
+
 	public static void toLinkedList(BinaryTree root)
 	{
 		if(root == null)
@@ -80,7 +80,7 @@ class BinaryTree
 			node = node.right;
 		}
 	}
-	
+
 	public static BinaryTree findLCA(BinaryTree node, int n1, int n2)
 	{
 		if(node==null)
@@ -100,7 +100,7 @@ class BinaryTree
 		else
 			return right;
 	}
-	
+
 	public static void breadthFirstSearch1(BinaryTree root)
 	{
 		if(root == null)

@@ -5,7 +5,7 @@ class PascalTriangle
 	{
 		System.out.println(PascalTriangle.generate(5));
 	}
-	
+
 	public static List<List<Integer>> generate(int numRows)
     {
         List<List<Integer>> l = new ArrayList<List<Integer>>();

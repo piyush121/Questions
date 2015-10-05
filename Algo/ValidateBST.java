@@ -11,7 +11,7 @@ public class ValidateBST
 		}
 		return false;
 	}
-	
+
 	public boolean isSubTreeGreater(TreeNode root, int value)
 	{
 		if(root==null)
@@ -23,7 +23,7 @@ public class ValidateBST
 		}
 		return false;
 	}
-	
+
 	public boolean isValidBST(TreeNode root)
 	{
 		if(root==null)
@@ -38,7 +38,7 @@ public class ValidateBST
 		}
 		return false;
 	}
-	
+
 	public static void main(String args[])
 	{
 		ValidateBST v = new ValidateBST();
@@ -63,14 +63,14 @@ public class ValidateBST
 	}
 }
 
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

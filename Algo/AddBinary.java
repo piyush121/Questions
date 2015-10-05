@@ -1,6 +1,6 @@
 class AddBinary
 {
-	public String addBinary(String a, String b) 
+	public String addBinary(String a, String b)
 	{
         if(a==null || b==null)return null;
 		String s="";
@@ -15,7 +15,7 @@ class AddBinary
 		}
 		return s;
     }
-	
+
 	public static void main(String args[])
 	{
 		AddBinary a = new AddBinary();

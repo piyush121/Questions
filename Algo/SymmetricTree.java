@@ -1,12 +1,12 @@
 class SymmetricTree
-{	
-	public boolean isSymmetric(TreeNode root) 
+{
+	public boolean isSymmetric(TreeNode root)
 	{
 		if(root==null)
 			return true;
 		return helper(root.left, root.right);
     }
-	
+
 	public boolean helper(TreeNode leftNode, TreeNode rightNode)
 	{
 		if(left==null && right == null)

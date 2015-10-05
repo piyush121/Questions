@@ -29,7 +29,7 @@ class LongestSubstringWithoutRepeating
     		if(!set.contains(c))
     		{
     			set.add(c);
-    		}	
+    		}
     		else
     		{
     			while(s.charAt(start)!=c)

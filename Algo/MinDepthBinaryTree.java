@@ -1,10 +1,10 @@
 class MinDepthBinaryTree
 {
-	public int minDepth(TreeNode root) 
+	public int minDepth(TreeNode root)
 	{
         helper(root);
     }
-	
+
 	public int helper(TreeNode root)
 	{
 		ListNode node = root;

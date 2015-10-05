@@ -4,14 +4,14 @@ import java.util.List;
 class PathSum2
 {
 	List<List<Integer>> list;
-	public List<List<Integer>> pathSum(TreeNode root, int sum) 
+	public List<List<Integer>> pathSum(TreeNode root, int sum)
 	{
 		list = new ArrayList<List<Integer>>();
 		ArrayList<Integer> curr = new ArrayList<Integer>();
 		helper(root, sum, 0 , curr);
 		return list;
     }
-	
+
 	public void helper(TreeNode root, int target, int sum, ArrayList<Integer> curr)
 	{
 		if(root!=null)
@@ -40,7 +40,7 @@ class PathSum2
 			curr.remove(curr.size()-1);
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		PathSum2 p = new PathSum2();

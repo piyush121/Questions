@@ -5,11 +5,11 @@ public class CompleteSubTree
 
 	public void findCompleteSubTree(TreeNode root)
 	{
-		
+
 		helper(root, -1);
 		System.out.println("Depth: "+maxSize+" maxNode: "+ maxNode);
 	}
-	
+
 	public int helper(TreeNode root, int depth)
 	{
 		TreeNode node = root;
@@ -20,7 +20,7 @@ public class CompleteSubTree
 		}
 		int left = helper(node.left, depth);
 		int right = helper(node.right, depth);
-		System.out.println("left: "+left+" right: "+right+" depthMax: "+depth+" maxNode: "+maxNode+" node: "+node.val);	
+		System.out.println("left: "+left+" right: "+right+" depthMax: "+depth+" maxNode: "+maxNode+" node: "+node.val);
 		if(left==right)
 		{
 			System.out.println("equal");
@@ -39,7 +39,7 @@ public class CompleteSubTree
 		//System.out.println("depthReturn: "+depth);
 		return depth;
 	}
-	
+
 	public static void main(String args[])
 	{
 		CompleteSubTree cs = new CompleteSubTree();
@@ -61,19 +61,19 @@ public class CompleteSubTree
 		root.right.right.right = new TreeNode(12);
 		root.right.right.left.right = new TreeNode(15);
 		root.right.right.right.right = new TreeNode(16);
-		
-		
+
+
 		cs.findCompleteSubTree(root);
 	}
 }
-class TreeNode 
+class TreeNode
 {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) 
-	{ 
-		val = x; 
+    TreeNode(int x)
+	{
+		val = x;
 		left = null;
 		right = null;
 	}

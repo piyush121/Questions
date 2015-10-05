@@ -20,7 +20,7 @@ class MergeSort
 		merge(left,right,a);
 		return a;
 	}
-	
+
 	public static void merge(int[] left, int[] right, int[] a)
 	{
 		int leftIndex = left.length-1;
@@ -63,7 +63,7 @@ class MergeSort
 			System.out.print(i+"\t");
 		System.out.println();
 	}
-	
+
 	public static void main(String arg[])
 	{
 		int a[] = {10, 30, 20, 70, 50, 40, 90};

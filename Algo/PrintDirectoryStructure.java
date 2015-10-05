@@ -14,15 +14,15 @@ class PrintDirectoryStructure
 			}
 			else
 				System.out.println(tab+file.getName());
-			
+
 		}
 	}
-	
+
 	public static void main(String args[])
 	{
 		PrintDirectoryStructure pd = new PrintDirectoryStructure();
 		File file = new File("D:\\Dropbox\\Java");
 		traverse(file, "");
 	}
-	
+
 }
