@@ -4,7 +4,54 @@ class CheckIfArrayIsBinaryHeap
 {
 	public static void main(String args[])
 	{
-
+		//int[] arr = {90, 15, 10, 7, 12, 2};
+		//int[] arr = {9, 15, 10, 7, 12, 11};
+		int[] arr = {90, 15, 10, 7, 12, 2, 8};
+		CheckIfArrayIsBinaryHeap c = new CheckIfArrayIsBinaryHeap();
+		System.out.println(c.isBinaryHeap(arr));
+		System.out.println(c.isBinaryHeapRecursive(arr, 0));
 	}
 	
+	//left child - of k : 2k
+	//right child - of k : 2k + 1
+	//No need to check leaf nodes
+	public boolean isBinaryHeap(int[] arr)
+	{
+		int i = 0;
+		while(i<=(arr.length-1)/2)
+		{
+			//System.out.println("i: "+i);
+			if((2*i)+1 <= arr.length-1)
+			{
+				//System.out.println("if#1");
+				if(arr[i]<arr[(2*i)+1]) 
+					return false;
+			}
+			if((2*i)+2 <= arr.length-1)
+			{
+				//System.out.println("if#2");
+				if(arr[i]<arr[(2*i)+2]) 
+					return false;
+			}
+			i++;
+		}	
+		return true;
+	}
+
+	public boolean isBinaryHeapRecursive(int[] arr, int i)
+	{
+		//if leaf node
+		//System.out.println("i: "+i);
+		if(i>=(arr.length-2)/2)
+		{
+			return true;
+		}
+		//System.out.println("i: "+i);
+		if(arr[i]>=arr[(2*i)+1] && arr[i]>=arr[(2*i)+2] && isBinaryHeapRecursive(arr, 2*i+1) && isBinaryHeapRecursive(arr, 2*i+2))
+		{
+			return true;
+		}
+		else
+			return false;
+	}
 }
