@@ -15,6 +15,15 @@
 #### HashSet Implementation
 	- http://javahungry.blogspot.com/2013/08/how-sets-are-implemented-internally-in.html
 
+#### Treemap Implementation
+	- http://javahungry.blogspot.com/2014/06/how-treemap-works-ten-treemap-java-interview-questions.html
+	- Red Black Tree is used Internally
+	- Red Black tree has the following properties :
+		1. As the name of the algorithm suggests ,color of every node in the tree is either red or black.
+		2. Root node must be Black in color.
+		3. Red node can not have a red color neighbor node.
+		4. All paths from root node to the null should consist the same number of black nodes 
+
 #### ArrayList vs Vector
 	- http://javahungry.blogspot.com/2013/12/difference-between-arraylist-and-vector-in-java-collection-interview-question.html
 

@@ -6,7 +6,7 @@ import java.util.*;
 
 class Graph{
 
-  Map<Integer, ArrayList<Integer>> graph;
+  public Map<Integer, ArrayList<Integer>> graph;
 
   public Graph(){
     graph = new HashMap<Integer,ArrayList<Integer>>();
@@ -37,6 +37,16 @@ class Graph{
         nodeToBeVisited.addAll(this.graph.get(currentNode));
     }
     return false;
+  }
+
+  public int getSize()
+  {
+    return this.graph.size();
+  }
+
+  public ArrayList<Integer> getAdjacentListOf(int vertex)
+  {
+    return this.graph.get(vertex);
   }
 
   public static void main(String[] args){
