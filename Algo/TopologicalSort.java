@@ -29,7 +29,7 @@ class TopologicalSort
 				this.topologicalSortUtil(i);
 		}
 	}
-
+	//generic dfs traversal + stack
 	public void topologicalSortUtil(int vertex)
 	{
 		this.visited[vertex] = true;
@@ -41,6 +41,7 @@ class TopologicalSort
 			if(visited[v]==false)
 				topologicalSortUtil(v);
 		}
+		//push the vertex on the stack only when all its adjacent vertices are on stack
 		stack.push(vertex);
 	}
 
