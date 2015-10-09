@@ -15,6 +15,7 @@ class Graph{
   public void addEdge(int a, int b){
     if(graph.get(a) != null){
       graph.get(a).add(b);
+      return;
     }
     ArrayList<Integer> edges = new ArrayList<>();
     edges.add(b);
@@ -55,7 +56,8 @@ class Graph{
     g.addEdge(1,2);
     g.addEdge(2,3);
     g.addEdge(3,6);
-    g.addEdge(4,5);
+    g.addEdge(1,3);
+    // g.addEdge(6,0);
     System.out.println(g.isCyclic(0));
   }
 }
