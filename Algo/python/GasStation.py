@@ -19,10 +19,8 @@ class Solution(object):
         g = gas[si] - cost[si]
         while (i%n) != si:
             i = i % n
-            g += gas[i]
-            if g >= cost[i]:
-                g -= cost[i]
-            else:
+            g += gas[i] - cost[i]
+            if g < 0:
                 if si < i:
                     while i < n and gas[i] < cost[i]:
                         i += 1
