@@ -4,16 +4,21 @@
 // import java.util.ArrayList;
 import java.util.*;
 
-class Graph{
+class Graph
+{
 
-  public Map<Integer, ArrayList<Integer>> graph;
+  Map<Integer, ArrayList<Integer>> graph;
+  boolean[] visited;
 
-  public Graph(){
-    graph = new HashMap<Integer,ArrayList<Integer>>();
+  public Graph()
+  {
+    this.graph = new HashMap<Integer,ArrayList<Integer>>();
   }
 
-  public void addEdge(int a, int b){
-    if(graph.get(a) != null){
+  public void addEdge(int a, int b)
+  {
+    if(graph.get(a) != null)
+    {
       graph.get(a).add(b);
       return;
     }
@@ -22,32 +27,41 @@ class Graph{
     graph.put(a, edges);
   }
 
-  public boolean isCyclic(int startNode){
-    Set<Integer> visitedNodes = new HashSet<Integer>();
-    LinkedList<Integer> nodeToBeVisited = new LinkedList<Integer>();
-    nodeToBeVisited.add(startNode);
-    while(nodeToBeVisited.peekFirst() != null){
-      Integer currentNode = nodeToBeVisited.poll();
-      if(visitedNodes.contains(currentNode)){
-        return true;
+  public void isCyclic()
+  {
+    int N = this.graph.size();
+    this.visited = new boolean[N];
+
+    for(Integer vertex : this.graph.keySet())
+    {
+      System.out.print("Has cycle starting from "+vertex+" : ");
+      if(visited[vertex]==false)
+      {
+        Stack<Integer> stack = new Stack<>();
+        System.out.print(this.isCyclicUtil(vertex, stack));
       }
-      else{
-        visitedNodes.add(currentNode);
-      }
-      if(this.graph.get(currentNode) != null)
-        nodeToBeVisited.addAll(this.graph.get(currentNode));
+      System.out.println();
+    }
+  }
+
+  public boolean isCyclicUtil(int vertex, Stack<Integer> stack)
+  {
+    this.visited[vertex] = true;
+    stack.add(push);
+    ArrayList<Integer> adjacency = this.graph.get(vertex);
+    for(int i=0;i<adjacency.size();i++)
+    {
+        int v = adjacency.get(i);
+        if(stack.search(v)==-1)
+        {
+          if(this.visited[v] == false)
+            return this.isCyclicUtil(v, set);
+        }
+        else
+        else 
+          return true;
     }
     return false;
-  }
-
-  public int getSize()
-  {
-    return this.graph.size();
-  }
-
-  public ArrayList<Integer> getAdjacentListOf(int vertex)
-  {
-    return this.graph.get(vertex);
   }
 
   public static void main(String[] args){
@@ -57,7 +71,10 @@ class Graph{
     g.addEdge(2,3);
     g.addEdge(3,6);
     g.addEdge(1,3);
+    g.addEdge(4,4);
+    g.addEdge(5,5);
+    g.addEdge(6,6);
     // g.addEdge(6,0);
-    System.out.println(g.isCyclic(0));
+    g.isCyclic();
   }
 }
