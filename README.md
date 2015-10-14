@@ -7,6 +7,9 @@
 		- Glass full of water (exactly half empty)
 		- 8 Friends are there. Each has some unique information to share with all his/her 7 friends. They make phone calls.  
 		  What is the minimum number of such calls required.
+		- A bag contains n strings (cotton threads). I choose 2 ends of strings randomly and tie them together and repeat the
+		  process. What is the expectation value of number of loops obtained via this process.
+		- Find a number abcd such that abcd * 4 = dcba (a,b,c,d represent individual digits of the number)
 
 	- Backtracking: https://see.stanford.edu/materials/icspacs106b/H19-RecBacktrackExamples.pdf
 	- River Crossing puzzle: https://en.wikipedia.org/wiki/River_crossing_puzzle
