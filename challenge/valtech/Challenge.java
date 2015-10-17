@@ -18,6 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.security.*;
+import java.security.*;
+import java.math.*;
 
 class Challenge
 {
@@ -139,44 +141,41 @@ class Challenge
     {
         for(String s : setOfWords)
         {
-            // System.out.println(s);
-            // concatenated.add(s);
+            if(s.length()==1  && !s.equals("a") && !s.equals("i")){
+                continue;
+            }
+            if(s.length()==2  && !s.equals("of") && !s.equals("to") && !s.equals("am") && !s.equals("go") && !s.equals("do")){
+                continue;
+            }
             combine = combine+" "+s;
             if(combine.replaceAll(" ","").length() < 15)
             {
-                //System.out.println("Combined: "+combine+"     S:"+s);
-                // Map<Character, Integer> tempMap = this.createHashMap(combine);
                 if(this.isValidHashMap(combine))
                     findPermutationHelper(combine);
             }
             if(combine.replaceAll(" ","").length()==15)
             {
-                // System.out.println("Combined: "+combine+"     S:"+s);
-                // System.out.println(comb85ine+" , "+s);   
-                // Map<Character, Integer> tempMap = this.createHashMap(combine);
-                // //System.out.println(tempMap);
-
                 if(this.isValidHashMap(combine)){
-                    //System.out.println(this.characterCountMap);
                     System.out.println(combine);
                     if("d5e847370c4d30b7e7aa8441a8b1303d".equals(this.getMD5(combine)))
-                        System.out.println(combine);
+                    {
+                        System.out.println("Answer:"+combine);
+                        System.exit(0);
+                    }
+
                 }
             }
-                // System.out.println("Combined: "+combine+"     S:"+s);
-                // String temp = concatenated.remove(concatenated.size()-1);
                 combine = combine.substring(0,combine.length()-s.length()-1);
-                // System.out.println(""+combine);
-
         }
     }
 
     public String getMD5(String text) throws NoSuchAlgorithmException, UnsupportedEncodingException
     {
-        byte[] bytesOfMessage = text.getBytes("UTF-8");
-        MessageDigest md = MessageDigest.getInstance("MD5");
-        byte[] thedigest = md.digest(bytesOfMessage);
-        return new String(thedigest);
+        
+        MessageDigest m=MessageDigest.getInstance("MD5");
+        m.update(text.getBytes(),0,text.length());
+        return new BigInteger(1,m.digest()).toString(16);
+
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, UnsupportedEncodingException
@@ -186,8 +185,6 @@ class Challenge
         System.out.println(c.setOfWords.size());
         c.filterSet();
         System.out.println(c.setOfWords.size());
-        // List<String> wordList = new ArrayList<>();
-        // wordList.addAll(c.setOfWords);
         c.findPermutationHelper("");
     }
 }
