@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.security.*;
+import java.math.BigInteger;
 
 class Challenge
 {
@@ -173,10 +174,9 @@ class Challenge
 
     public String getMD5(String text) throws NoSuchAlgorithmException, UnsupportedEncodingException
     {
-        byte[] bytesOfMessage = text.getBytes("UTF-8");
-        MessageDigest md = MessageDigest.getInstance("MD5");
-        byte[] thedigest = md.digest(bytesOfMessage);
-        return new String(thedigest);
+        MessageDigest m=MessageDigest.getInstance("MD5");
+        m.update(text.getBytes(),0,text.length());
+        return new BigInteger(1,m.digest()).toString(16);
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, UnsupportedEncodingException
@@ -185,10 +185,11 @@ class Challenge
         c.filterWords();
         System.out.println(c.setOfWords.size());
         c.filterSet();
-        System.out.println(c.setOfWords.size());
+       // System.out.println(c.setOfWords.size());
         // List<String> wordList = new ArrayList<>();
         // wordList.addAll(c.setOfWords);
-        c.findPermutationHelper("");
+        //c.findPermutationHelper("");
+        System.out.println(c.getMD5("payam"));
     }
 }
 
