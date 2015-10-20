@@ -1,1 +1,0 @@
-#### What is "B" in B/B+ tree?
