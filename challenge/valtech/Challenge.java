@@ -1,7 +1,6 @@
 // The following MD5 hash is an anagram of the phrase “forager dog motto”
 // Can you write the code to find the phrase that generated this hash:
 
-
 // d5e847370c4d30b7e7aa8441a8b1303d
 
 // Attached is a list of words that could help you.
@@ -162,7 +161,6 @@ class Challenge
                         System.out.println("Answer:"+combine);
                         System.exit(0);
                     }
-
                 }
             }
                 combine = combine.substring(0,combine.length()-s.length()-1);
@@ -170,12 +168,10 @@ class Challenge
     }
 
     public String getMD5(String text) throws NoSuchAlgorithmException, UnsupportedEncodingException
-    {
-        
+    {       
         MessageDigest m=MessageDigest.getInstance("MD5");
         m.update(text.getBytes(),0,text.length());
         return new BigInteger(1,m.digest()).toString(16);
-
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, UnsupportedEncodingException
