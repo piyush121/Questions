@@ -1,4 +1,6 @@
-/* Huffman Encoding */
+/* Huffman Encoding 
+	https://en.wikipedia.org/wiki/Huffman_coding
+*/
 import java.util.Map;
 import java.util.HashMap;
 import java.util.PriorityQueue;
