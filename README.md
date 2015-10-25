@@ -14,7 +14,6 @@
 	- Backtracking: https://see.stanford.edu/materials/icspacs106b/H19-RecBacktrackExamples.pdf
 	- River Crossing puzzle: https://en.wikipedia.org/wiki/River_crossing_puzzle
 
-
 	- Left Join and Inner Join
 	- Binary Search Tree and Hash Table
 	- (1,100) number find fixed duplicate
@@ -23,20 +22,11 @@
 	- Balance Parenthesis in O(n) time and O(1) spaceDS_Store
 
 	- http://javarevisited.blogspot.sg/2015/10/20-questions-you-can-ask-to-interviewer.html
+	- http://stackoverflow.com/questions/11700320/is-string-literal-pool-a-collection-of-references-to-the-string-object-or-a-col
+	- http://stackoverflow.com/questions/22094111/how-to-print-the-whole-string-pool
+	- http://www.geeksforgeeks.org/g-fact-20-cayleys-formula-for-number-of-labelled-trees/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+Geeksforgeeks+%28GeeksforGeeks%29
 
-	- levenshtein distance
 
-	- phylogenic trees
-
-	- http://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
-
-	http://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+Geeksforgeeks+%28GeeksforGeeks%29
-
-	http://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/
-
-	http://www.geeksforgeeks.org/dynamic-programming-set-6-min-cost-path/
-
-	http://www.academia.edu/9327453/A_Fast_Data_Structure_for_Anagrams
 
 
 	
