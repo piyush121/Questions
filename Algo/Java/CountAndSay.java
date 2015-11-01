@@ -1,54 +1,42 @@
 /* https://leetcode.com/problems/count-and-say/ */
+
 public class CountAndSay
 {
-    public String countAndSay(int n)
-    {
-        if(n<0)
-            return "";
-        else if(n==0)
-            return "";
-        else if(n==1)
-            return "1";
-        else
+	public String countAndSay(int n) 
+	{
+		String num = 1+"";
+        for(int i=1;i<n;i++)
         {
-            String result = ""+n;
-            int temp=n;
-            for(int i=1;i<n;i++)
-            {
-                String num = this.createString(this.getCountArray(temp));
-                result += ", " + num;
-                temp = Integer.parseInt(num);
-            }
-            return result;
-        }
-    }
-
-    private int[] getCountArray(int n)
-    {
-        int[] countArray = new int[10];
-        while(n!=0)
-        {
-            countArray[n%10]++;
-            n = n/10;
-        }
-        return countArray;
-    }
-
-    private String createString(int[] countArray)
-    {
-        String num = "";
-        for(int i=0;i<10;i++)
-        {
-            if(countArray[i]>0)
-                num += countArray[i]+""+i;
+        	num = helper(num);
         }
         return num;
     }
 
-    public static void main(String args[])
+    public String helper(String num)
     {
-        CountAndSay solution = new CountAndSay();
-        System.out.println(solution.countAndSay(4));
+    	String s="";
+    	int count = 1;
+    	char prevChar = num.charAt(0);
+    	for(int i=1;i<num.length();i++)
+    	{
+    		if(num.charAt(i)==prevChar)
+    		{
+    			++count;
+    		}
+    		else
+    		{
+    			s += count+""+prevChar;
+    			prevChar = num.charAt(i);
+    			count = 1;
+    		}
+    	}
+    	s+=count+""+prevChar;
+    	return s;
     }
 
+    public static void main(String args[])
+    {
+    	CountAndSay cs = new CountAndSay();
+    	System.out.println(cs.countAndSay(1));
+    }
 }
