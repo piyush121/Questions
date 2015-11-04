@@ -33,6 +33,10 @@ class MinimumDistanceBetweenWords
 		int n = 0;
 		while(m<posA.size() && n<posB.size())
 		{
+			//check both the list simulatneously
+			//if index at posA is greater than index at posB
+			//then increment index at posB to minimize the distance
+			//between two indices
 			if(posA.get(m) > posB.get(n))
 			{
 				min = Math.min(min, posA.get(m) - posB.get(n));
@@ -48,7 +52,6 @@ class MinimumDistanceBetweenWords
 				m++;
 			}
 		}
-
 		System.out.println(min);
 	}
 
