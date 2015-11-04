@@ -1,4 +1,6 @@
 /*
+http://www.careercup.com/question?id=5707919444148224
+
 Given a 1D array, implement function Sum(x1,x2) where x1 and x2 are indices of array. 
 Find sum of all elements in between the given indices inclusive of them. 
 Do in Time complexity of O(1).
