@@ -35,7 +35,8 @@ public class CycleDetectionInDirectedGraph
 			{
 				if(!visited[i])
 				{
-					return helper(i, visited, recStack);
+					if(helper(i, visited, recStack))
+						return true;
 				}
 				else if(recStack.contains(i))
 					return true;
