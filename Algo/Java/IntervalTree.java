@@ -1,4 +1,6 @@
 /* http://www.geeksforgeeks.org/interval-tree/ */
+import java.util.List;
+import java.util.ArrayList;
 public class IntervalTree
 {
 	public ITreeNode insert(ITreeNode root, Interval i)
@@ -24,17 +26,25 @@ public class IntervalTree
 		return false;
 	}
 
-	public Interval searchOverlapping(ITreeNode root, Interval i)
+	public List<Interval> searchOverlapping(ITreeNode root, Interval i, List<Interval> list)
 	{
 		if(root == null)
-			return null;
+		{
+			return list;
+		}
+		if(root.left == null && root.right==null)
+		{
+			return list;
+		}
 
 		if(this.doOverlap(root.interval, i))
-			return root.interval;
-
+		{
+			list.add(root.interval);
+		}
 		if(root.left!=null && root.left.max >= i.lo)
-			return searchOverlapping(root.left, i);
-		return searchOverlapping(root.right, i);
+				searchOverlapping(root.left, i, list);
+		searchOverlapping(root.right, i, list);
+		return list;
 	}
 
 	public static void main(String args[])
@@ -53,7 +63,7 @@ public class IntervalTree
     	iTree.inorder(root);
 
     	Interval x = new Interval(16, 21);
-    	System.out.println(iTree.searchOverlapping(root, x));
+    	System.out.println(iTree.searchOverlapping(root, x, new ArrayList<Interval>()));
 	}
 
 	public void inorder(ITreeNode root)
