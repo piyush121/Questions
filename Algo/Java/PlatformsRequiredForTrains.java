@@ -5,6 +5,8 @@ class PlatformsRequiredForTrains
 {
 	public int countPlatforms(int[] arr, int[] dep)
 	{
+
+		//sort both arrays 
 		Arrays.sort(arr);
 		Arrays.sort(dep);
 
@@ -13,6 +15,7 @@ class PlatformsRequiredForTrains
 
 		int count=0;
 		int max = Integer.MIN_VALUE;
+		//use merge of merge sort
 		while(m < arr.length && n < dep.length)
 		{
 			if(arr[m] < dep[n])
