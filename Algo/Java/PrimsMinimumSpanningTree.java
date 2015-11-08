@@ -34,7 +34,7 @@ class PrimsMinimumSpanningTree
 					}
 				}
 			}
-			else if(!mst.contains(e.v) && mst.contains(e.u))
+			else if(!mst.contains(e.v))
 			{
 				System.out.println(e.u+" - "+e.v+" : "+ e.weight);
 				mst.add(e.v);
@@ -52,14 +52,14 @@ class PrimsMinimumSpanningTree
 
 	public static void main(String args[])
 	{
-		 int graph[][] = {
+		/* int graph[][] = {
 		 					{0, 2, 0, 6, 0},
                       		{2, 0, 3, 8, 5},
                       		{0, 3, 0, 0, 7},
                       		{6, 8, 0, 0, 9},
                       		{0, 5, 7, 9, 0},
                      	};
-        /*
+        */
         int graph[][] = {
         					{0, 4, 0, 0, 0, 0, 0, 8, 0},
                       		{4, 0, 8, 0, 0, 0, 0, 11, 0},
@@ -71,7 +71,7 @@ class PrimsMinimumSpanningTree
                       		{8, 11, 0, 0, 0, 0, 1, 0, 7},
                       		{0, 0, 2, 0, 0, 0, 6, 7, 0}
                      };
-         */
+        
         PrimsMinimumSpanningTree m = new PrimsMinimumSpanningTree();
         m.findMST(graph);
 	}
