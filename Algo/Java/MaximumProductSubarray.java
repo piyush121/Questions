@@ -3,7 +3,7 @@
 
 class MaximumProductSubarray
 {
-	public int maxProduct(int[] nums) 
+	public int maxProduct1(int[] nums) 
 	{
         int localMax = 1;
         int localMin = 1;
@@ -32,6 +32,23 @@ class MaximumProductSubarray
         	}
         }
         return globalMax;
+    }
+
+    public int maxProduct(int[] nums)
+    {
+    	if(nums==null || nums.length==0)
+    		return 0;
+    	int maxLocal = nums[0];
+    	int minLocal = nums[0];
+    	int globalMax = nums[0];
+    	for(int i=0;i<nums.length;++i)
+    	{
+    		int temp = maxLocal;
+    		maxLocal = Math.max(Math.max(maxLocal * nums[i], nums[i]), nums[i] * minLocal);
+    		minLocal = Math.min(Math.min(temp * nums[i], nums[i]), nums[i] * minLocal);
+    		globalMax = Math.max(globalMax, maxLocal);
+    	}
+    	return globalMax;
     }
 
     public static void main(String args[])
