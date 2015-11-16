@@ -70,7 +70,8 @@ class LargestPowerSubsequence
 	public static void main(String args[])
 	{
 		LargestPowerSubsequence l = new LargestPowerSubsequence();
-		String s1 = "abaabbabcacc";
+		//String s1 = "abaabbabcacc";
+		String s1 = "abcccbbbaaaa";
 		String s2 = "abc";
 		int[] a = l.preProcessing(s1, s2);
 		//l.print(a);
