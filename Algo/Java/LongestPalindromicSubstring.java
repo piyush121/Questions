@@ -1,4 +1,5 @@
 /* http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/ */
+/* https://leetcode.com/problems/longest-palindromic-substring/ */
 import java.util.Arrays;
 class LongestPalindromicSubstring
 {
@@ -58,11 +59,61 @@ class LongestPalindromicSubstring
 		return maxLength;
 	}
 
+	public String longestPalindrome(String s) 
+	{
+        boolean dp[][] = new boolean[s.length()][s.length()];
+
+        int maxLength = 1;
+        int startIndex = 0;
+        //All the substrings of length 1 will be palindrome of length 1
+        for(int i=0;i<dp.length;++i)
+        {
+        	Arrays.fill(dp[i], false);
+        }
+        for(int i=0;i<dp.length;++i)
+        {
+        	dp[i][i] = true;
+        }
+        //All the substring of length 2 are palindrome if first and last character of substring are equal
+        for(int i=0;i<dp.length-1;i++)
+        {
+        	if(s.charAt(i)==s.charAt(i+1))
+        	{
+        		dp[i][i+1] = true;
+        		maxLength = 2;
+        		startIndex = i;
+        	}
+        }
+
+        //check all the substring
+
+        int l = s.length();
+        for(int i=3;i<=l;++i)
+        {
+        	for(int j=0;j<=l-i;++j)
+        	{
+        		int k = i+j-1;
+        		if(dp[j+1][k-1]==true && s.charAt(j)==s.charAt(k))
+        		{
+        			dp[j][k] = true;
+        			if(i>maxLength)
+        			{
+        				maxLength = i;
+        				startIndex = j;
+        			}
+        		}
+        	}
+        }
+        System.out.println(startIndex + ":"+maxLength);
+        return s.substring(startIndex, startIndex + maxLength);
+    }
+
 
 	public static void main(String args[])
 	{
 		LongestPalindromicSubstring l = new LongestPalindromicSubstring();
 		String str = "forgeeksskeegfor";
 		System.out.println(l.longestPalindromicSubstring(str));
+		System.out.println(l.longestPalindrome("ccc"));
 	}
 }
