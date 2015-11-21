@@ -1,6 +1,6 @@
 ''' https://leetcode.com/problems/bulls-and-cows/ '''
 
-ass Solution(object):
+class Solution(object):
     def getHint(self, secret, guess):
         """
         :type secret: str
