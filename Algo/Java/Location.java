@@ -1,12 +1,26 @@
-public class Location
+public class Location implements Comparable<Location>
 {
 	public int x;
 	public int y;
+	public int cost;
 
 	public Location(int x, int y)
 	{
 		this.x = x;
 		this.y = y;
+	}
+
+	public Location(int x, int y, int cost)
+	{
+		this.x = x;
+		this.y = y;
+		this.cost = cost;
+	}
+
+	public Location(Location s, int cost)
+	{
+		this(s.x, s.y);
+		this.cost = cost;
 	}
 
 	public int hashCode()
@@ -37,5 +51,10 @@ public class Location
 	public String toString()
 	{
 		return "("+this.x+", "+ this.y+")";
+ 	}
+
+ 	public int compareTo(Location l)
+ 	{
+ 		return this.cost - l.cost;
  	}
 }

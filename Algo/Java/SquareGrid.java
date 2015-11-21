@@ -22,10 +22,6 @@ public class SquareGrid
 		dirs.add(new Location(0, -1)); 	//down
 
 		this.walls = new HashSet<>();
-		this.addWalls(new Location(3, 3), new Location(5, 12));
-		this.addWalls(new Location(13, 4), new Location(15, 15));
-		this.addWalls(new Location(21, 0), new Location(23, 7));
-		this.addWalls(new Location(23, 5), new Location(26, 7));
 	}
 
 	//check if the location is valid
@@ -88,6 +84,10 @@ public class SquareGrid
 	public static void main(String args[])
 	{
 		SquareGrid s = new SquareGrid(30, 15);
+		s.addWalls(new Location(3, 3), new Location(5, 12));
+		s.addWalls(new Location(13, 4), new Location(15, 15));
+		s.addWalls(new Location(21, 0), new Location(23, 7));
+		s.addWalls(new Location(23, 5), new Location(26, 7));
 		s.drawGrid();
 	}
 }

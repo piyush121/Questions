@@ -1,19 +1,21 @@
 /* http://www.redblobgames.com/pathfinding/a-star/implementation.html#cplusplus */
 import java.util.LinkedList;
 import java.util.HashMap;
-import java.util.Map;
 class BreadthFirstSearchSquareGrid
 {
 	private int height;
 	private int width;
 	private SquareGrid graph;
-	private Map<Location, Location> cameFrom;
 
 	public BreadthFirstSearchSquareGrid(int width, int height)
 	{
 		this.height = height;
 		this.width = width;
 		this.graph = new SquareGrid(width, height);
+		this.graph.addWalls(new Location(3, 3), new Location(5, 12));
+		this.graph.addWalls(new Location(13, 4), new Location(15, 15));
+		this.graph.addWalls(new Location(21, 0), new Location(23, 7));
+		this.graph.addWalls(new Location(23, 5), new Location(26, 7));
 	}
 
 	public HashMap<Location, Location> bfs(Location start)	
@@ -74,7 +76,7 @@ class BreadthFirstSearchSquareGrid
 					System.out.print("* ");
 				else if(cameFrom.containsKey(l))
 				{
-					Location from = cameFrom.get(l);
+					Location from = this.cameFrom.get(l);
 					if(from.x == l.x+1)
 					{
 						System.out.print("\u2192 ");
