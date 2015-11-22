@@ -46,7 +46,9 @@ class AStarSearchSquareGridWithWeight
 				if(!costSoFar.containsKey(next) || cost < this.costSoFar.get(next))
 				{
 					int priority = cost + this.heuristic(curr, next);
+					//setting priority as cost to be compared while inserting in priority
 					Location temp = new Location(next, priority);
+					//cost of the path remain same as in Dijkstra's Algorithm
 					this.costSoFar.put(temp, cost);
 					frontier.add(temp);
 					this.cameFrom.put(next, curr);
