@@ -48,10 +48,11 @@ class WordSegmentation
 				}
 			}
 		}
+		//backward step
 		Stack<String> words = new Stack<>();
 		int nextEdge = bestEdge.get(bestEdge.size()-1);
 		words.push(line.substring(nextEdge, bestEdge.size()-1));
-		//backward step
+		
 		while(bestEdge.get(nextEdge)!=-1)
 		{
 			String s = line.substring(bestEdge.get(nextEdge), nextEdge);
