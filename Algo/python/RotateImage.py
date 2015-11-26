@@ -1,6 +1,6 @@
 ''' https://leetcode.com/problems/rotate-image/ '''
 
-iclass Solution(object):
+class Solution(object):
     def rotate(self, matrix):
         """
         :type matrix: List[List[int]]
