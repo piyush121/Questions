@@ -1,33 +1,46 @@
+/* https://leetcode.com/problems/decode-ways/ */
+import java.util.ArrayList;
+import java.util.List;
 class DecodeWays
 {
-	int count = 0;
-	String map = " ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	public int numDecodings(String s)
+	public int numDecodings(String s) 
 	{
-		if(s==null||s=="")
+		if(s==null || s.equals(""))
 			return 0;
-		return helper("", s);
+        List<ArrayList<String>> list = new ArrayList<>();
+        helper(s, list, new ArrayList<String>());
+        return list.size();
     }
-	//s = "123"
-	public int helper(String s, String r)
-	{
-		if(r.equals(""))
-		{
-			count = count+1;
-			//System.out.println(s);
-		}
-		if(r.length()>0)
-			helper(s+map.charAt(Integer.parseInt(r.charAt(0)+"")), r.substring(1));
-		if(r.length()>=2 && Integer.parseInt(r.substring(0,2))<27)
-			helper(s+map.charAt(Integer.parseInt(r.substring(0,2))), r.substring(2));
-		return count;
-	}
 
-	public static void main(String args[])
-	{
-		DecodeWays dc = new DecodeWays();
-		System.out.println(dc.numDecodings("4757562545844617494555774581341211511296816786586787755257741178599337186486723247528324612117156948"));
-	}
+    public void helper(String s, List<ArrayList<String>> list, ArrayList<String> a)
+    {
+ 		if(s.length()==0)
+ 		{
+ 			System.out.println(a);
+ 			list.add(new ArrayList<String>(a));
+ 			a = new ArrayList<>();
+ 			return;
+ 		}
+ 		if(s.length()>0)
+ 		{
+ 			a.add(s.substring(0, 1));
+ 			helper(s.substring(1), list, a);
+ 		}
+    	if(s.length()>=2)
+    	{
+    		String temp = s.substring(0, 2);
+    		if(Integer.parseInt(temp)<27)
+    		{
+    			a.add(temp);
+    			helper(s.substring(2), list, a);
+    		}
+    	}
+    }
 
+    public static void main(String args[])
+    {
+    	DecodeWays d = new DecodeWays();
+    	System.out.println(d.numDecodings("6065812287883668764831544958683283296479682877898293612168136334983851946827579555449329483852397155"));
+    }
 
 }
