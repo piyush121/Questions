@@ -1,11 +1,20 @@
+/* https://leetcode.com/problems/reverse-linked-list/ */
 public class ReverseLinkedList
 {
 	static LinkNode p = null;
+	//iterative solution 
+	//take three pointers 
+	//@curr : to point the current node starting from head
+	//@prev : to point previous node starting from null
+	//@next : to point to next node starting from null and updated to point 
+	// curr.next in the subsequent iteration
 	public LinkNode iterative(LinkNode head)
 	{
 		LinkNode prev = null;
 		LinkNode curr = head;
 		LinkNode next = null;
+		// loop until current pointer doesn't point to null i.e. end of the 
+		//linked list
 		while(curr!=null)
 		{
 			next = curr.next;
@@ -17,6 +26,7 @@ public class ReverseLinkedList
 		return prev;
 	}
 
+	//recursive implementation of the above iterative solution
 	public LinkNode recursive(LinkNode prev, LinkNode curr, LinkNode next)
 	{
 		if(curr==null)
@@ -30,11 +40,17 @@ public class ReverseLinkedList
 
 	public void recursive2(LinkNode head)
 	{
+		//if head == null there is no node in the linked list
 		if(head==null)
 			return;
-
+		//take two pointers first and rest
+		//@first : initially points to the head of the list
+		//@rest : initially points to head.next
 		LinkNode first = head;
 		LinkNode rest = first.next;
+		//if rest == null there is only single node in the linked list
+		// or we have reached the end of the linkedlist
+		//terminating condition
 		if(rest==null)
 			return;
 		recursive2(rest);
