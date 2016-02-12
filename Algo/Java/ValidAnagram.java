@@ -1,4 +1,6 @@
 /* https://leetcode.com/problems/valid-anagram/ */
+
+/* to check if the given string is the valid anagram of other string*/
 public class ValidAnagram
 {
     public boolean isAnagram(String s, String t)

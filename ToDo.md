@@ -33,5 +33,11 @@ http://trainingandplacement1.blogspot.com/2015/08/amcat-automata-campus-question
 - Given a binary tree write a function that will return the number of left nodes and right nodes in the tree.  
 - Write a function which will take a valid Unix file path and removes any '..' or '.' from the path, and returns this result. 
 - Return k most frequent words in the text. Subsequent questions: what if we have very large text file? Can we distribute this process for multiple machines? What if we have limited memory? 
-- estimating dentist in New York city
+- estimating number of dentists in New York city
 - estimating the time of context switching in multi threading environment 
+http://www.careercup.com/question?id=2395
+http://stackoverflow.com/questions/6987394/how-can-you-measure-the-time-spent-in-a-context-switch-under-java-platform
+
+- NavigableSet : http://docs.oracle.com/javase/7/docs/api/java/util/NavigableSet.html
+
+- Interval Trees
