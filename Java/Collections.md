@@ -37,3 +37,6 @@
 	- http://stackoverflow.com/questions/256859/is-there-a-performance-difference-between-a-for-loop-and-a-for-each-loop
 	- https://aliteralmind.wordpress.com/2014/03/22/for_foreach/
 	- http://www.mkyong.com/java/while-loop-for-loop-and-iterator-performance-test-java/
+
+#### HashMap vs ConcurrentHashMap
+	- http://www.mindclues.com/DisplayProgramServlet?exp_id=9&example=Difference%20between%20HashMap%20and%20ConcurrentHashMap%20in%20Java&topic_id=17&lang_id=1

@@ -1,4 +1,5 @@
 import java.util.*;
+import java.math.BigInteger;
 class Test
 {
 	public static void main(String[] args)
@@ -31,5 +32,13 @@ class Test
 		String[] arr = s.split("\\s+");
 		for(String p: arr)
 			System.out.println("#" +p);
+
+		BigInteger m = new BigInteger("590");
+		BigInteger e = new BigInteger("187");
+		BigInteger p = new BigInteger("29");
+		BigInteger q = new BigInteger("37");
+		BigInteger pq = p.multiply(q);
+		System.out.println(pq);
+		System.out.println(m.modPow(e, pq));
 	}
 }
