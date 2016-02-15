@@ -46,7 +46,7 @@ public class BinaryTreePaths
             //path = path + "->" + root.val;
             //if the left node of the tree is not null
             //then recursively call helper function, with node details appended
-            //to the path 
+            //to the patha 
             if(root.left!=null)
                 helper(root.left, path+"->"+root.left.val, pathList);
             if(root.right!=null)
