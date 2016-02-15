@@ -1,15 +1,22 @@
+/* http://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/ */
 public class DeleteDuplicatesFromList
 {
 	public ListNode deleteDuplicates(ListNode head)
 	{
+		//if head is null linkedlist is empty 
+		//if head.next is null then there is only single node in the 
+		//linkedlist then return head
         if(head==null || head.next==null)
 			return head;
 		int prev = head.val;
 		ListNode p1 = head.next;
+		//loop until p1 is not equal to null
 		while(p1!=null)
 		{
+			//prev is equals to p1.val (duplicate found)
 			if(prev == p1.val)
 			{
+
 				ListNode p2 = head;
 				while(p2.next!= p1)
 					p2= p2.next;
