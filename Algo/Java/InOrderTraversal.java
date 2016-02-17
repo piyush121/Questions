@@ -1,3 +1,4 @@
+/* https://leetcode.com/problems/binary-tree-inorder-traversal/ */
 import java.util.List;
 import java.util.ArrayList;
 public class InOrderTraversal
@@ -11,17 +12,25 @@ public class InOrderTraversal
 
 	public List<Integer> helper(TreeNode node, List<Integer> l)
 	{
+		//check if the tree node is null
+		//return the list
 		if(node==null)
 			return l;
+		//if the left node is not null
+		//then visit the left node first(recursively)
 		if(node.left!=null)
 			helper(node.left, l);
+		//add the node in the list
 		l.add(node.val);
 		//System.out.print(node.val);
+		//check if the right node is not null
+		//then visit the right node (recursively)
 		if(node.right!=null)
 			helper(node.right, l);
 		return l;
 	}
 
+	//to get the number of node in a tree
 	public int size(TreeNode node)
 	{
 		if(node==null)

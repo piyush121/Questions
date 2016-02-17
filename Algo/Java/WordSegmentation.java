@@ -17,6 +17,9 @@ class WordSegmentation
 		this.bestScore = new HashMap<>();
 		this.bestEdge = new HashMap<>();
 		this.probabilityMap = new HashMap<>();
+		//given the probability of occuring different constructs
+		//for example, ("ab", 0.246596964) means probability of occuring 
+		//ab is 0.246596964
 		probabilityMap.put("a", 0.0907179533);
 		probabilityMap.put("b", 0.0183156389);
 		probabilityMap.put("c", 0.100258844);
