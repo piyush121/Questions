@@ -1,4 +1,4 @@
-/* http://www.geeksforgeeks.org/618/ */
+/* https://leetcode.com/problems/binary-tree-inorder-traversal/ */
 import java.util.List;
 import java.util.ArrayList;
 public class InOrderTraversal
@@ -29,7 +29,7 @@ public class InOrderTraversal
 			helper(node.right, l);
 		return l;
 	}
-	
+
 	//to get the number of node in a tree
 	public int size(TreeNode node)
 	{
