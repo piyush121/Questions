@@ -3,6 +3,8 @@
 class XORWithoutXOROperator
 {
 
+	//the idea is to use formula
+	// a XOR b = ~ab + ~ba
 	public int getXOR(int a, int b)
 	{
 		return ((~a & b) | (a & ~b));
