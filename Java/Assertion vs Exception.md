@@ -14,3 +14,6 @@
 - In other words, exceptions address the robustness of your application while assertions address its correctness.
 
 - Assertions are designed to be cheap to write, you can use them almost everywhere and I'm using this rule of thumb: the more an assertion statement looks stupid, the more valuable it is and the more information it embeds. When debugging a program that does not behave the right way, you will surely check the more obvious failure possibilities based on your experience. Then you will check for problems that just cannot happen: this is exactly when assertions help a lot and save time.
+
+#### ClassNotFoundException vs NoClassDefFoundError
+- http://javaconceptoftheday.com/classnotfoundexception-vs-noclassdeffounderror-in-java/
