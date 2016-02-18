@@ -9,6 +9,7 @@ public class CloneGraph
 	{
 		if(node==null)
 			return null;
+        //@visited : the cloned graph
         HashMap<Integer, UndirectedGraphNode> visited = new HashMap<>();
         clone(node, visited);
        // System.out.println(visited);
@@ -17,12 +18,18 @@ public class CloneGraph
 
     public void clone(UndirectedGraphNode node, HashMap<Integer, UndirectedGraphNode> visited)
     {
+        //if the map "visited" already contains the node label
+        //then return 
     	if(visited.containsKey(node.label))
     		return;
+        //put the node.label and node in the map "visited"
     	visited.put(node.label, new UndirectedGraphNode(node.label));
+        //loop through each neighbor of the node
+        //and visit these neighbors
     	for(UndirectedGraphNode neighbor : node.neighbors)
     	{
     		clone(neighbor, visited);
+            //add that neighbor in the list of neighbors of the node
     		visited.get(node.label).neighbors.add(visited.get(neighbor.label));
     	}
     }
@@ -34,8 +41,10 @@ public class CloneGraph
 		UndirectedGraphNode g2 = new UndirectedGraphNode(2);
 		g0.neighbors.add(g1);
 		g0.neighbors.add(g2);
+
 		g1.neighbors.add(g0);
 		g1.neighbors.add(g2);
+
 		g2.neighbors.add(g0);
 		g2.neighbors.add(g1);
 		g2.neighbors.add(g2);
