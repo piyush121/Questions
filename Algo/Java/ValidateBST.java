@@ -1,17 +1,28 @@
+/* https://leetcode.com/problems/validate-binary-search-tree/ */
 public class ValidateBST
 {
+	//check if the value of all left subtree nodes are less than the parent 
+	//node
+	//@root : root node of the left sub tree 
+	//@value : value of of the root node 
 	public boolean isSubTreeLesser(TreeNode root, int value)
 	{
+		//check if the root is null
+		//then return true
 		if(root==null)
 			return true;
 		else
 		{
-			if(root.val<value &&isSubTreeLesser(root.left, value) && isSubTreeLesser(root.right, value))
+			//value of the left node should be less than 
+			//the value of the parent and recursive check left child and 
+			//right child of the left sub tree
+			if(root.val<value && isSubTreeLesser(root.left, value) && isSubTreeLesser(root.right, value))
 				return true;
 		}
 		return false;
 	}
-
+	//check if the value of all right subtree nodes are greater than the 
+	//parent node
 	public boolean isSubTreeGreater(TreeNode root, int value)
 	{
 		if(root==null)
@@ -30,6 +41,9 @@ public class ValidateBST
 			return true;
 		else
 		{
+			//check left node and right node
+			//and recursviely check left subtree
+			//and right subtree
 			if(isSubTreeLesser(root.left, root.val)
 				&& isSubTreeGreater(root.right, root.val)
 				&& isValidBST(root.left)
