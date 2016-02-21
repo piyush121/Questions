@@ -1,4 +1,9 @@
-import java.util.*;
+/* https://leetcode.com/problems/3sum/ */
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 class ThreeSum
 {
 	public void findSum(int[] a)
@@ -26,41 +31,50 @@ class ThreeSum
 		}
 	}
 
-	public List<List<Integer>> threeSum(int[] nums) 
-	{
-        List<List<Integer>> list = new ArrayList<>();
-        HashMap<Integer, List<Integer>> map = new HashMap<>();
-        for(int i=0;i<nums.length;i++)
+  public List<List<Integer>> threeSum(int[] nums) 
+  {
+    //sort the given array
+    Arrays.sort(nums);
+    //result list to be returned
+    List<List<Integer>> list = new ArrayList<>();
+
+    for(int i=0;i<nums.length;i++)
+    {
+      //if the element at index i and index i-1 are equal
+      //then continue
+      if(i>0 && nums[i]==nums[i-1])
+        continue;
+      int sum = 0-nums[i];
+      int start = i+1;
+      int end = nums.length-1;
+      while(start<end)
+      {
+        //nums[start] + nums[end] == sum
+        //then add the numbers in the list
+        if(nums[start]+nums[end]==sum)
         {
-        	for(int j=i+1;j<nums.length;j++)
-        	{
-        		HashSet<Integer> set = new HashSet<Integer>();
-        		set.add(i);
-        		set.add(j);
-        		map.put(0-nums[i]-nums[j], new ArrayList<>(set));
-        	}
+          list.add(Arrays.asList(nums[i], nums[start], nums[end]));
+          //check if nums[start] == nums[start+1] 
+          //then start++ (skip duplicates)
+          while(start<end && nums[start]==nums[start+1])
+            start++;
+          start++;
+          //check if nums[end] == nums[end-1]
+          //then end-- (skip duplicates)
+          while(start<end && nums[end]==nums[end-1])
+            end--;
+          end--;
         }
-        System.out.println("map: "+map);
-       	
-       	for(int i=0;i<nums.length;i++)
-       	{
-       		if(map.containsKey(nums[i]))
-       		{
-       			
-       			List<Integer> a = map.remove(nums[i]);
-       			if(!a.contains(i))
-       			{
-       				ArrayList<Integer> n = new ArrayList<>();
-       				for(int k: a)
-       					n.add(nums[k]);
-       				n.add(nums[i]);
-       				Collections.sort(n);
-       				list.add(n);
-       			}
-       		}
-       	}
-        return list;
-    }
+        //if nums[start] + nums[end] > sum
+        //then end-- (to get it close to the sum)
+        else if (nums[start] + nums[end] > sum)
+          end--;
+        else 
+          start++;
+      }
+    }  
+    return list;    
+  }
 
 	public static void main(String[] args)
 	{
