@@ -45,5 +45,16 @@ class Test
 		int i = 10 + + 11 - - 12 + + 13 - - 14 + + 15;
  
         System.out.println(i);
+
+        /*boolean containsDigit = false;
+        String str = "payam16@NYU";
+        for(char c : str.toCharArray())
+        {
+        	if(containsDigit = Character.isDigit(c))
+        		break;
+        }
+        if(containsDigit)
+        	return true*/
+
 	}
 }
