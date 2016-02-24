@@ -139,8 +139,11 @@ Following are the key components/objects of Hibernate:
 	* A Session is used to get a physical connection with a database. The Session object is lightweight and designed to be instantiated each time an interaction is needed with the database. Persistent objects are saved and retrieved through a Session object.
 
 	* The session objects should not be kept open for a long time because they are not usually thread safe and they should be created and destroyed them as needed.
-	
+
 - Session.beginTransaction method begins a unit of work and returns the associated Transaction object.
+- Session.createCriteria creates a new Criteria instance, for the given entity class, or a superclass of an entity class.
+- Session.createQuery creates a new instance of Query for the given HQL query string.
+- Session.createSQLQuery creates a new instance of SQLQuery for the given SQL query string.
 - Session.delete removes a persistent instance from the datastore.
 - Session.get returns the persistent instance of the given named entity with the given identifier, or null if there is no such persistent instance.
 - Session.refresh re-reads the state of the given instance from the underlying database.
@@ -161,11 +164,23 @@ There are following main rules of persistent classes, however, none of these rul
 	* All classes that do not extend or implement some specialized classes and interfaces required by the EJB framework.
 
 - What are the three states of a persistent entity at a given point in time?
-Instances may exist in one of the following three states at a given point in time:
+	Instances may exist in one of the following three states at a given point in time:
+	1. transient: A new instance of a a persistent class which is not associated with a Session and has no representation in the database and no identifier value is considered transient by Hibernate.
+	2. persistent: You can make a transient instance persistent by associating it with a Session. A persistent instance has a representation in the database, an identifier value and is associated with a Session.
+	3. detached: Once we close the Hibernate Session, the persistent instance will become a detached instance.
 
-transient: A new instance of a a persistent class which is not associated with a Session and has no representation in the database and no identifier value is considered transient by Hibernate.
+- SessionFactory is a thread-safe and can be accessed by multiple threads simultaneously.
+- Session is not thread-safe.
 
-persistent: You can make a transient instance persistent by associating it with a Session. A persistent instance has a representation in the database, an identifier value and is associated with a Session.
+- What is lazy loading?
+	* Lazy loading is a technique in which objects are loaded on demand basis. Since Hibernate 3, lazy loading is by default, enabled so that child objects are not loaded when parent is loaded.
 
-detached: Once we close the Hibernate Session, the persistent instance will become a detached instance.
+- first level cache(mandatory, Session cache), second level cache(optional, configured on per-class and per collection basis, caching objects across session), query level cache
+
+- What are concurrency strategies?
+	* A concurrency strategy is a mediator which responsible for storing items of data in the cache and retrieving them from the cache. If you are going to enable a second-level cache, you will have to decide, for each persistent class and collection, which cache concurrency strategy to use.
+		1. Transactional: Use this strategy for read-mostly data where it is critical to prevent stale data in concurrent transactions,in the rare case of an update.
+		2. Read-write: Again use this strategy for read-mostly data where it is critical to prevent stale data in concurrent transactions,in the rare case of an update.
+		3. Nonstrict-read-write: This strategy makes no guarantee of consistency between the cache and the database. Use this strategy if data hardly ever changes and a small likelihood of stale data is not of critical concern.
+		4. Read-only: A concurrency strategy suitable for data which never changes. Use it for reference data only.
 
