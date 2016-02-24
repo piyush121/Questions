@@ -57,4 +57,9 @@ class Test
         	return true*/
 
 	}
+
+	/* abstract public void method()
+	{
+		System.out.println("is it possible");
+	}*/
 }
