@@ -184,3 +184,4 @@ There are following main rules of persistent classes, however, none of these rul
 		3. Nonstrict-read-write: This strategy makes no guarantee of consistency between the cache and the database. Use this strategy if data hardly ever changes and a small likelihood of stale data is not of critical concern.
 		4. Read-only: A concurrency strategy suitable for data which never changes. Use it for reference data only.
 
+
