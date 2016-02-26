@@ -185,3 +185,6 @@ There are following main rules of persistent classes, however, none of these rul
 		4. Read-only: A concurrency strategy suitable for data which never changes. Use it for reference data only.
 
 
+
+
+- 
