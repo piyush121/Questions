@@ -44,4 +44,22 @@ public class SiblingNumbers
 	from events
 	group by sensor_id;
 
+MapReduce 
+MapReduce works by breaking the processing into two phases: the map phase and the reduce phase.
+Each phase has key-value pairs as input and output, the types of which may be chosen by the
+programmer.
+The Map function that performs filtering and sorting and then outputs a set of records
+of the form (key, data)
+The Reduce function that performs a summary operation (such as counting the number 
+of students in each queue, yielding name, frequencies) 
+
+
+In general, there are multiple instances of the map program running on different nodes of a compute cluster. Each map instance is given a distinct portion of the input file by the MapReduce scheduler to process. 
+
+As such, a single-threaded implementation of MapReduce will usually not be faster than a traditional (non-MapReduce) implementation, any gains are usually only seen with multi-threaded implementations
+
+for example, a word count using MapReduce as a design Pattern
+
+
+
 */
